@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gisenic</title>
+    <link rel="icon" href="./Img/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="headerMain" class="main__header">
+      <!-- Comienza el nav -->
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./Img/logo-png.png" alt="Logo Gisenic"
+        /></a>
+        <h2 class="nombreEmpresa">Gisenic</h2>
+      </div>
+      <!-- el logo va dentro del header pero no dentro del nav  -->
+      <nav>
+        <ul>
+          <li>
+            <a href="./nosotros.html">Nosotros</a>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+          <li class="item">
+            <a href="./servicios.html">Servicios</a>
+            <ul>
+              <!-- menu con submenu que se despliega. Es decir, esta anidada-->
+              <li>Empresas</li>
+              <li>Industria</li>
+              <li>Habilitaciones</li>
+              <li>Capacitaciones</li>
+              <li>Comercio</li>
+              <li>Pyme</li>
+            </ul>
+            <!--Termina el submenu-->
+          </li>
+          <li>
+            <a href="./presupuesto.html">Presupuesto online</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Finaliza el nav  -->
+    </header>
+
+    <main class="main__contacto">
+      <form class="main__contacto--form" action="">
+        <label for="name">Nombre completo</label>
+        <input type="text" name="name" placeholder="Nombre completo" />
+        <br />
+        <!--Texto de una sola linea-->
+        <label for="correo electronico">Correo electronico</label>
+        <input type="email" name="correo electronico" placeholder="Email" />
+        <br />
+        <!--<label for="password">Contraseña</label>
+      <input type="password" name="contraseña" placeholder="Contraseña" />-->
+
+        <label for="phone">Telefono</label>
+        <input type="phone" name="phone" placeholder="Telefono" />
+        <br />
+        <label for="asunto">Asunto</label>
+        <input type="asunto" name="asunto" placeholder="Asunto del mensaje" />
+        <br />
+        <div class="textarea">
+          <textarea
+            name="message"
+            cols="50"
+            rows="10"
+            placeholder="Ingresá tu mensaje"
+          ></textarea>
+        </div>
+        <!--cuadro de texto para escribir libremente. cols = columna; rows = filas-->
+        <input
+          class="submit--contacto"
+          type="submit"
+          value="Enviar formulario"
+        />
+        <input class="reset--contacto" type="reset" value="Borrar formulario" />
+        <!--
+      <p>Usted es:</p>
+      <select name="Tipo" id="">
+        <option value="Pyme">Pyme</option>
+        <option value="Gran empresa">Gran empresa</option>
+        <option value="Monotributista"> Monotributista</option>
+      </select>
+      <label for="bussines">Pyme</label>
+      <input type="radio" name="bussines" value="Pymes" />
+      <label for="bussines">Empresa grande</label>
+      <input type="radio" name="bussines" value="Empresas" />
+     
+      <input type="button" value="No hace nada" />
+-->
+        <!--Value es lo que va a aparecer en el boton -->
+        <!--
+      <label for="accept">Acepta terminos y condiciones</label>
+      <input type="checkbox" name="accept" value="Si" checked />
+-->
+        <!--
+      <label for="Servicios">Servicios</label>
+      <select name="Servicios" id="">
+        <option value="Web">Web</option>
+        <option value="Apps">Apps</option>
+      </select>
+    -->
+      </form>
+      <div>
+        <p class="maps" align="center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7830575072608!2d-58.4235778!3d-34.6349222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbac1e5aadcd%3A0xd13c9bbd6dc9b116!2sAv.%20La%20Plata%201768%2C%20C1424%20CABA!5e0!3m2!1ses-419!2sar!4v1661817012771!5m2!1ses-419!2sar"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </p>
+        <p></p>
+      </div>
+    </main>
+    <footer class="main__footer">
+      <img src="./Img/logo-png.png" alt="Logo Gisenic" />
+      <p>Datos de contacto</p>
+      <p>Telefono: 15-3212-3212</p>
+      <p>Redes sociales:</p>
+      <ul>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://www.twitter.com">Twitter</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

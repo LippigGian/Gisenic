@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+/*COMIENZA EL HEADER*/
+.main__header {
+  display: block;
+  background-color: rgb(27, 83, 196);
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*este display flex es porque el nombre esta dentro del logo, entonces me quedaba abajo*/
+}
+.logo h2 {
+  font-size: 19px;
+}
+
+.logo img {
+  width: 50px;
+  height: 38px;
+  margin-right: 10px;
+}
+.main__header ul ul {
+  /*el submenu posicion abslouta asi sale del flujo y se mueve dentro de su padre relativo*/
+  display: none;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+ul li {
+  padding: 10px;
+}
+ul li a {
+  text-decoration: none;
+}
+.main__principal {
+  background-color: white;
+  color: black;
+  padding-top: 50px;
+  /* overflow: hidden; */
+}
+.main__principal--section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 15px;
+  text-align: center;
+}
+.main__principal--img img {
+
+  border-radius: 15px;
+  padding-top: 30px;
+}
+hr {
+  margin: 30px 80px 30px 80px;
+}
+/*el img del footer causaba overflow*/
+footer img {
+  height: 30px;
+  width: 30px;
+}
+/*el banner causaba overflow*/
+.main__terciario img {
+  width: 100%;
+  height: auto;
+}
+.main__secundario {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 20px;
+}
+.main__secundario--titulo {
+  text-align: center;
+  padding-bottom: 35px;
+}
+.main__secundario--cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+.main__secundario--button {
+  text-align: center;
+}
+.main__secundario--button a button {
+  font-size: 25px;
+  padding: 10px;
+}
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*para centrar la imagen*/
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  /*bottom 0; para darle la posicion al margen inferior, pero pierde medidas*/
+  background-color: rgba(57, 56, 56);
+  width: 100%;
+  padding: 5px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  /*text-decoration: para quitar el subrayado del hipervinculo*/
+}
+.main__footer ul {
+  list-style: none;
+  /*list-style none para quitar el punto de las listas*/
+}
+
+.main__footer ul li {
+  padding: 5px;
+  /*para que se vea horizontal*/
+}
+
+footer img {
+  width: 50px;
+  height: 38px;
+}
+
+@media screen and (min-width: 810px) /*minimo tiene que tener 768 de width,
+  es decir que aqui entrará todo lo que sea tablet*/ {
+  /* AQUI COMIENZA EL MAIN PRINCIPAL */
+
+
+.main__principal--contenido {
+  
+  font-size: 22px;
+  margin-left: 15px;
+}
+
+.main__principal--img img {
+padding-top: 25px;
+}
+
+
+.main__secundario--titulo {
+display: flex;
+width: 50%;
+flex-direction: column;
+align-self: center;
+}
+
+.main__secundario {
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "titulo titulo"
+    "card1 card2"
+    "card3 card4"
+    "button button";
+  padding: 0;
+}
+.main__secundario--titulo {
+  grid-area: titulo;
+
+}
+
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+.button {
+  grid-area: button;
+}
+.main__secundario--cards {
+  width: 75%;
+  /* border: 4px solid black; */
+  margin: 10px;
+}
+
+.main__secundario--button {
+  padding: 50px;
+}
+
+.main__secundario--button a button {
+  font-size: 30px;
+}
+}
+
+@media screen and (min-width: 1000px) /*minimo tiene que tener 810 de width,
+  es decir que aqui entrará todo lo que no sea mobile*/ {
+  /* AQUI COMIENZA EL MAIN PRINCIPAL */
+ 
+
+  .main__principal--section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+    
+  .main__principal--contenido {
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    font-size: 25px;
+    width: 50%;
+ } /* 
+  .main__secundario {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+      "titulo titulo"
+      "card1 card2"
+      "card3 card4"
+      "button button";
+    padding: 0;
+  }*/
+
+  .main__secundario--titulo {
+    grid-area: titulo;
+    width: 1500px;
+  }
+/*
+  .card1 {
+    grid-area: card1;
+  }
+  .card2 {
+    grid-area: card2;
+  }
+  .card3 {
+    grid-area: card3;
+  }
+  .card4 {
+    grid-area: card4;
+  }
+  .button {
+    grid-area: button;
+  }
+  .main__secundario--cards {
+    width: 75%;
+    /* border: 4px solid black; 
+    margin: 10px;
+  }
+*/
+  .main__secundario--button {
+    padding: 50px;
+  }
+  .main__secundario--button a button {
+    font-size: 40px;
+  } */
+  .main__terciario {
+    grid-area: banner;
+  }
+  .main__terciario img {
+    width: 100%;
+    height: auto;
+  }
+  /* MAIN NOSOTROS */
+  .main__nosotros {
+    background-color: white;
+    color: black;
+    padding: 140px 0px 0px;
+    overflow: hidden;
+  }
+  .main__nosotros--parrafo {
+    padding: 15px;
+  }
+  .main__nosotros--img {
+    padding-left: 200px;
+  }
+  .main__nosotros--img img {
+    border-radius: 15px;
+    width: 40%;
+    float: right;
+    margin-right: 50px;
+    padding-bottom: 20px;
+  }
+  /* MAIN CONTACTO */
+  .main__contacto {
+    background-color: white;
+    color: black;
+    padding: 140px 0px 0px;
+    overflow: hidden;
+  }
+  .main__contacto--form {
+    text-align: center;
+    float: left;
+    margin-left: 300px;
+    width: 500px;
+  }
+  .main__contacto--form label {
+    display: inline-block;
+    text-align: center;
+    width: 128px;
+    padding: 10px;
+  }
+  .textarea {
+    padding: 10px;
+  }
+  textarea {
+    text-align: justify;
+    margin: 10px;
+  }
+  .submit--contacto {
+    float: left;
+    margin: 10px;
+  }
+  .reset--contacto {
+    float: right;
+    margin: 10px;
+  }
+  /* AQUI COMIENZA EL MAIN DE SERVICIOS */
+  .main__servicios {
+    background-color: white;
+    color: black;
+    padding: 140px 0px 0px;
+    overflow: hidden;
+  }
+
+  .main__servicios--img img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  /* AQUI COMIENZA EL MAIN DE PRESUPUESTOS ONLINE */
+  .main__presupuesto {
+    background-color: white;
+    color: black;
+    padding: 140px 0px 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main__presupuesto h1 {
+    text-align: center;
+  }
+  .main__presupuesto p {
+    text-align: center;
+  }
+  .main__presupuesto--div {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .submit--presupuesto {
+    margin: 10px;
+  }
+  .reset--presupuesto {
+    margin: 10px;
+  }
+
+  .main__presupuesto--form label {
+    display: inline-block;
+    text-align: center;
+    width: 128px;
+    padding: 10px;
+  }
+
+  /*COMIENZA EL HEADER*/
+  .main__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 75px;
+    margin-right: 10px;
+  }
+  .logo h2 {
+    font-size: 35px;
+  }
+
+  .main__header ul li a:hover {
+    /* background-color: #429fb8; */
+    /*resaltar el color para ver donde estoy parado en el nav*/
+    color: black;
+    /* me gusta mas como queda cambiandole el color y no el background; */
+  }
+  ul li a {
+    font-size: 20px;
+  }
+  /*comienza el footer*/
+
+  footer img {
+    height: 100px;
+    width: 100px;
+  }
+  footer div p {
+    font-size: 24px;
+  }
+  iframe {
+    float: right;
+    margin-right: 300px;
+  }
+}
