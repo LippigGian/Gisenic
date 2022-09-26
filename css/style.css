@@ -185,7 +185,39 @@ align-self: center;
 .main__secundario--cards {
   width: 75%;
   /* border: 4px solid black; */
-  margin: 10px;
+  margin: 30px;
+
+}
+/*efecto con @keyframe sobre las cartas*/
+.main__secundario--cards:hover
+{
+  animation-name: cartas;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  transition: all 2s;
+  
+  border: 4px dashed blue; 
+  border-radius: 10%;
+ 
+}
+.main__secundario--cards:hover.card1
+{
+  transform: translate(160px, 75px) scale(1.15);
+
+}
+.main__secundario--cards:hover.card2
+{
+  transform: translate(-160px, 75px) scale(1.15);
+}
+.main__secundario--cards:hover.card3
+{
+  transform: translate(160px, -75px ) scale(1.15);
+}
+.main__secundario--cards:hover.card4
+{
+  transform: translate(-160px, -75px) scale(1.15);
 }
 
 .main__secundario--button {
@@ -405,4 +437,11 @@ align-self: center;
     float: right;
     margin-right: 300px;
   }
+
+  @keyframes cartas {
+    /* from{transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);} */
+
+   
+  } 
 }
