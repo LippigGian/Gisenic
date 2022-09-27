@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gisenic</title>
     <link rel="icon" href="./Img/favicon.png" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap"
@@ -50,84 +58,102 @@
       </nav>
       <!-- Finaliza el nav  -->
     </header>
-
-    <main class="main__contacto">
-      <form class="main__contacto--form" action="">
-        <label for="name">Nombre completo</label>
-        <input type="text" name="name" placeholder="Nombre completo" />
-        <br />
-        <!--Texto de una sola linea-->
-        <label for="correo electronico">Correo electronico</label>
-        <input type="email" name="correo electronico" placeholder="Email" />
-        <br />
-        <!--<label for="password">Contraseña</label>
-      <input type="password" name="contraseña" placeholder="Contraseña" />-->
-
-        <label for="phone">Telefono</label>
-        <input type="phone" name="phone" placeholder="Telefono" />
-        <br />
-        <label for="asunto">Asunto</label>
-        <input type="asunto" name="asunto" placeholder="Asunto del mensaje" />
-        <br />
-        <div class="textarea">
-          <textarea
-            name="message"
-            cols="50"
-            rows="10"
-            placeholder="Ingresá tu mensaje"
-          ></textarea>
+    <main>
+      <form>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-4">
+            <label for="inputNombre">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNombre"
+              placeholder="Escribe tu nombre"
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="inputApellido">Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputApellido"
+              placeholder="Escribe tu apellido"
+            />
+          </div>
         </div>
-        <!--cuadro de texto para escribir libremente. cols = columna; rows = filas-->
-        <input
-          class="submit--contacto"
-          type="submit"
-          value="Enviar formulario"
-        />
-        <input class="reset--contacto" type="reset" value="Borrar formulario" />
-        <!--
-      <p>Usted es:</p>
-      <select name="Tipo" id="">
-        <option value="Pyme">Pyme</option>
-        <option value="Gran empresa">Gran empresa</option>
-        <option value="Monotributista"> Monotributista</option>
-      </select>
-      <label for="bussines">Pyme</label>
-      <input type="radio" name="bussines" value="Pymes" />
-      <label for="bussines">Empresa grande</label>
-      <input type="radio" name="bussines" value="Empresas" />
-     
-      <input type="button" value="No hace nada" />
--->
-        <!--Value es lo que va a aparecer en el boton -->
-        <!--
-      <label for="accept">Acepta terminos y condiciones</label>
-      <input type="checkbox" name="accept" value="Si" checked />
--->
-        <!--
-      <label for="Servicios">Servicios</label>
-      <select name="Servicios" id="">
-        <option value="Web">Web</option>
-        <option value="Apps">Apps</option>
-      </select>
-    -->
+        <div class="offset-3 col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="Escribe tu correo electrónico"
+          />
+        </div>
+        <div class="offset-3 col-md-6">
+          <label for="inputPhone">Teléfono</label>
+          <input
+            type="phone"
+            class="form-control"
+            id="inputPhone"
+            placeholder="Escribe tu número de teléfono"
+          />
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <label for="inputDireccion">Dirección</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputDireccion"
+              placeholder="Escribe tu dirección"
+            />
+          </div>
+          <div class="col-4">
+            <label for="inputLocalidad">Localidad</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputLocalidad"
+              placeholder="Escribe tu localidad"
+            />
+          </div>
+          <div class="col-4">
+            <label for="inputCp">Código postal</label>
+            <input
+              type="number"
+              
+              class="form-control"
+              id="inputCp"
+              placeholder="Escribe tu código postal"
+            />
+          </div>
+        </div>
+
+        <div class="form-floating offset-2 col-8 ">
+          <textarea class="form-control" placeholder="Dejé aquí su mensaje" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Mensaje</label>
+        </div>
+
+        
+    
+          <div class="form-check offset-5">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Acepto términos, condiciones y privacidad.
+            </label>
+          </div>
+        <!-- d-grid activa el display grid en bootstrap -->
+        <!-- gap era en grid el espacio que hay entre filas y columnas -->
+        <!-- mx auto porque se refiere al margin en el eje x -->
+        <div class=" d-grid gap-2 col-2 mx-auto mt-2 mb-5">
+          <button class="btn btn-primary" type="button">Enviar</button>
+          <a class="btn btn-primary" href="contacto.html" role="button">Resetear</a>
+        </div> 
       </form>
-      <div>
-        <p class="maps" align="center">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7830575072608!2d-58.4235778!3d-34.6349222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbac1e5aadcd%3A0xd13c9bbd6dc9b116!2sAv.%20La%20Plata%201768%2C%20C1424%20CABA!5e0!3m2!1ses-419!2sar!4v1661817012771!5m2!1ses-419!2sar"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </p>
-        <p></p>
-      </div>
     </main>
+
     <footer class="main__footer">
-      <img src="./Img/logo-png.png" alt="Logo Gisenic" />
+      <img src="./img/logo-png.png" alt="Logo Gisenic" />
       <p>Datos de contacto</p>
       <p>Telefono: 15-3212-3212</p>
       <p>Redes sociales:</p>
@@ -137,5 +163,11 @@
         <li><a href="https://www.instagram.com">Instagram</a></li>
       </ul>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
