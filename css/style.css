@@ -129,7 +129,7 @@ footer img {
   height: 38px;
 }
 
-@media screen and (min-width: 810px) /*minimo tiene que tener 768 de width,
+@media screen and (min-width: 768px) /*minimo tiene que tener 768 de width,
   es decir que aqui entrará todo lo que sea tablet*/ {
   /* AQUI COMIENZA EL MAIN PRINCIPAL */
 
@@ -188,37 +188,6 @@ align-self: center;
   margin: 30px;
 
 }
-/*efecto con @keyframe sobre las cartas*/
-.main__secundario--cards:hover
-{
-  animation-name: cartas;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-
-  transition: all 2s;
-  
-  border: 4px dashed blue; 
-  border-radius: 10%;
- 
-}
-.main__secundario--cards:hover.card1
-{
-  transform: translate(160px, 75px) scale(1.15);
-
-}
-.main__secundario--cards:hover.card2
-{
-  transform: translate(-160px, 75px) scale(1.15);
-}
-.main__secundario--cards:hover.card3
-{
-  transform: translate(160px, -75px ) scale(1.15);
-}
-.main__secundario--cards:hover.card4
-{
-  transform: translate(-160px, -75px) scale(1.15);
-}
 
 .main__secundario--button {
   padding: 50px;
@@ -229,7 +198,7 @@ align-self: center;
 }
 }
 
-@media screen and (min-width: 1000px) /*minimo tiene que tener 810 de width,
+@media screen and (min-width: 1024px) /*minimo tiene que tener 1024 de width,
   es decir que aqui entrará todo lo que no sea mobile*/ {
   /* AQUI COMIENZA EL MAIN PRINCIPAL */
  
@@ -260,7 +229,7 @@ align-self: center;
 
   .main__secundario--titulo {
     grid-area: titulo;
-    width: 1500px;
+    width: 100vw;
   }
 /*
   .card1 {
@@ -351,6 +320,45 @@ align-self: center;
     float: right;
     margin: 10px;
   }
+  /*efecto con @keyframe sobre las cartas*/
+.main__secundario--cards:hover
+{
+  animation-name: cartas;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  transition: all 2s;
+  
+  border: 4px dashed rgb(193, 197, 202); 
+  border-radius: 10%;
+ 
+}
+.main__secundario--cards:hover.card1
+{
+  transform: translate(160px, 75px) scale(1.15);
+  background-color: rgba(228, 234, 240)
+
+}
+.main__secundario--cards:hover.card2
+{
+  transform: translate(-160px, 75px) scale(1.15);
+  background-color: rgba(228, 234, 240)
+
+}
+.main__secundario--cards:hover.card3
+{
+  transform: translate(160px, -75px ) scale(1.15);
+  background-color: rgba(228, 234, 240)
+
+}
+.main__secundario--cards:hover.card4
+{
+  transform: translate(-160px, -75px) scale(1.15);
+  background-color: rgba(228, 234, 240)
+
+}
+
   /* AQUI COMIENZA EL MAIN DE SERVICIOS */
   .main__servicios {
     background-color: white;
