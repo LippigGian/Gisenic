@@ -51,7 +51,6 @@ ul li a {
   background-color: white;
   color: black;
   padding-top: 50px;
-  /* overflow: hidden; */
 }
 
 .main__principal--section {
@@ -77,18 +76,6 @@ ul li a {
 
 hr {
   margin: 30px 80px 30px 80px;
-}
-
-/*el img del footer causaba overflow*/
-footer img {
-  height: 30px;
-  width: 30px;
-}
-
-/*el banner causaba overflow*/
-.main__terciario img {
-  width: 100%;
-  height: auto;
 }
 
 .main__secundario {
@@ -118,6 +105,12 @@ footer img {
 .main__secundario--button a button {
   font-size: 25px;
   padding: 10px;
+}
+
+/*el banner causaba overflow*/
+.main__terciario img {
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -226,6 +219,21 @@ footer img {
     width: 50%;
   }
 
+  .main__secundario--titulo {
+    grid-area: titulo;
+    width: 100vw;
+  }
+
+  .main__secundario--button {
+    padding: 50px;
+  }
+  .main__secundario--button a button {
+    font-size: 40px;
+  }
+  .main__terciario {
+    grid-area: banner;
+  }
+
   @keyframes movimiento {
     0%,
     100% {
@@ -242,25 +250,6 @@ footer img {
     }
   }
 
-
-  .main__secundario--titulo {
-    grid-area: titulo;
-    width: 100vw;
-  }
-
-  .main__secundario--button {
-    padding: 50px;
-  }
-  .main__secundario--button a button {
-    font-size: 40px;
-  }
-  .main__terciario {
-    grid-area: banner;
-  }
-  .main__terciario img {
-    width: 100%;
-    height: auto;
-  }
   /* MAIN NOSOTROS */
   .main__nosotros {
     background-color: white;
@@ -421,5 +410,4 @@ footer img {
     float: right;
     margin-right: 300px;
   }
-
 }
