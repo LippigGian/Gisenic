@@ -61,7 +61,7 @@
     <main>
       <form>
         <div class="row justify-content-center mt-5">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <label for="inputNombre">Nombre</label>
             <input
               type="text"
@@ -70,7 +70,7 @@
               placeholder="Escribe tu nombre"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <label for="inputApellido">Apellido</label>
             <input
               type="text"
@@ -80,7 +80,8 @@
             />
           </div>
         </div>
-        <div class="offset-3 col-md-6">
+        <div class="row justify-content-center m-2">
+        <div class="col-md-6">
           <label for="inputEmail4">Email</label>
           <input
             type="email"
@@ -89,7 +90,9 @@
             placeholder="Escribe tu correo electrónico"
           />
         </div>
-        <div class="offset-3 col-md-6">
+        </div>
+        <div class="row justify-content-center m-2">
+        <div class="col-md-6">
           <label for="inputPhone">Teléfono</label>
           <input
             type="phone"
@@ -98,8 +101,9 @@
             placeholder="Escribe tu número de teléfono"
           />
         </div>
-        <div class="row">
-          <div class="col-4">
+      </div>
+      <div class="row justify-content-center m-2">
+          <div class="col-3">
             <label for="inputDireccion">Dirección</label>
             <input
               type="text"
@@ -108,7 +112,7 @@
               placeholder="Escribe tu dirección"
             />
           </div>
-          <div class="col-4">
+          <div class="col-2">
             <label for="inputLocalidad">Localidad</label>
             <input
               type="text"
@@ -117,52 +121,125 @@
               placeholder="Escribe tu localidad"
             />
           </div>
-          <div class="col-4">
+          <div class="col-2">
             <label for="inputCp">Código postal</label>
             <input
               type="number"
-              
               class="form-control"
               id="inputCp"
               placeholder="Escribe tu código postal"
             />
           </div>
         </div>
-
-        <div class="form-floating offset-2 col-8 ">
-          <textarea class="form-control" placeholder="Dejé aquí su mensaje" id="floatingTextarea2" style="height: 100px"></textarea>
-          <label for="floatingTextarea2">Mensaje</label>
+        <div class="row justify-content-center m-2">
+        <div class="form-floating  col-8">
+          <textarea
+            class="form-control"
+            placeholder="Dejé aquí su mensaje"
+            id="floatingTextarea2"
+            style="height: 100px"
+          ></textarea>
+          <label class="text-justify ms-3" for="floatingTextarea2">Mensaje</label>
         </div>
+      </div>
 
-        
-    
-          <div class="form-check offset-5">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck">
-              Acepto términos, condiciones y privacidad.
-            </label>
-          </div>
+        <div class="form-check offset-5">
+          <input class="form-check-input" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck">
+            Acepto términos, condiciones y privacidad.
+          </label>
+        </div>
         <!-- d-grid activa el display grid en bootstrap -->
         <!-- gap era en grid el espacio que hay entre filas y columnas -->
         <!-- mx auto porque se refiere al margin en el eje x -->
-        <div class=" d-grid gap-2 col-2 mx-auto mt-2 mb-5">
+        <div class="d-grid gap-2 col-2 mx-auto mt-2 mb-5">
           <button class="btn btn-primary" type="button">Enviar</button>
-          <a class="btn btn-primary" href="contacto.html" role="button">Resetear</a>
-        </div> 
+          <a class="btn btn-primary" href="contacto.html" role="button"
+            >Resetear</a
+          >
+        </div>
       </form>
     </main>
 
-    <footer class="main__footer">
-      <img src="./img/logo-png.png" alt="Logo Gisenic" />
-      <p>Datos de contacto</p>
-      <p>Telefono: 15-3212-3212</p>
-      <p>Redes sociales:</p>
-      <ul>
-        <li><a href="https://www.facebook.com">Facebook</a></li>
-        <li><a href="https://www.twitter.com">Twitter</a></li>
-        <li><a href="https://www.instagram.com">Instagram</a></li>
-      </ul>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="m-auto">
+          <p>Contactenos por las redes sociales:</p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com" target="_blank" class="text-secondary">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank" class="text-secondary">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank" class="text-secondary">Instagram</a>
+            </li></ul>
+        </div>
+          
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h5 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Gisenic
+              </h5>
+              <p>
+                <img src="./img/logo-png.png" alt="">
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
+              <p>
+                <a href="#!" class="text-reset">Nosotros</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Contactos</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Servicios</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Presupuesto online</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+              <p><i class="fas fa-home me-3"></i> Av. la plata 1768, Boedo</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@gisenic.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> 11-3212-3212</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
     </footer>
+    <!-- Footer -->
+
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
