@@ -67,6 +67,7 @@ ul li a {
   animation-iteration-count: infinite;
   /*para que la velocidad de la animacion sea lineal*/
   animation-timing-function: linear;
+  /*linear*/
 }
 
 .main__principal--img img {
