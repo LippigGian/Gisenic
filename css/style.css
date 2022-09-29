@@ -148,7 +148,32 @@ footer img {
   width: 50px;
   height: 38px;
 }
+  /* MAIN NOSOTROS */
+  .main__nosotros {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
 
+  
+    /* AQUI COMIENZA EL MAIN DE SERVICIOS */
+    .main__servicios--img img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  .main__nosotros--parrafo {
+    padding: 15px;
+  }
+  .main__nosotros--img {
+    display: grid;
+    align-self: center;
+  }
+  .main__nosotros--img img {
+    border-radius: 15px;
+    width: 60vw;
+  }
 @media screen and (min-width: 768px) {
   /* AQUI COMIENZA EL MAIN PRINCIPAL */
   .main__principal--contenido {
@@ -203,6 +228,10 @@ footer img {
   .main__secundario--button a button {
     font-size: 30px;
   }
+    /* MAIN NOSOTROS */
+  .main__nosotros--img img {
+    width: 50vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -251,25 +280,10 @@ footer img {
   }
 
   /* MAIN NOSOTROS */
-  .main__nosotros {
-    background-color: white;
-    color: black;
-    padding: 140px 0px 0px;
-    overflow: hidden;
-  }
-  .main__nosotros--parrafo {
-    padding: 15px;
-  }
-  .main__nosotros--img {
-    padding-left: 200px;
-  }
   .main__nosotros--img img {
-    border-radius: 15px;
-    width: 40%;
-    float: right;
-    margin-right: 50px;
-    padding-bottom: 20px;
+    width: 40vw;
   }
+
   /* MAIN CONTACTO */
   .main__contacto {
     background-color: white;
@@ -330,18 +344,7 @@ footer img {
     transform: translate(-160px, -75px) scale(1.15);
     background-color: #e4eaf0;
   }
-  /* AQUI COMIENZA EL MAIN DE SERVICIOS */
-  .main__servicios {
-    background-color: white;
-    color: black;
-    padding: 140px 0px 0px;
-    overflow: hidden;
-  }
-  .main__servicios--img img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
+
   /* AQUI COMIENZA EL MAIN DE PRESUPUESTOS ONLINE */
   .main__presupuesto {
     background-color: white;
