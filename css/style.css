@@ -345,39 +345,7 @@ footer img {
     background-color: #e4eaf0;
   }
 
-  /* AQUI COMIENZA EL MAIN DE PRESUPUESTOS ONLINE */
-  .main__presupuesto {
-    background-color: white;
-    color: black;
-    padding: 140px 0px 0px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .main__presupuesto h1 {
-    text-align: center;
-  }
-  .main__presupuesto p {
-    text-align: center;
-  }
-  .main__presupuesto--div {
-    width: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  .submit--presupuesto {
-    margin: 10px;
-  }
-  .reset--presupuesto {
-    margin: 10px;
-  }
-  .main__presupuesto--form label {
-    display: inline-block;
-    text-align: center;
-    width: 128px;
-    padding: 10px;
-  }
+
   /*COMIENZA EL HEADER*/
   .main__header {
     display: flex;
@@ -409,8 +377,5 @@ footer img {
   footer div p {
     font-size: 24px;
   }
-  iframe {
-    float: right;
-    margin-right: 300px;
-  }
+
 }
