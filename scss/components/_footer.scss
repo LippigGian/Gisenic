@@ -1,0 +1,46 @@
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*para centrar la imagen*/
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  /*bottom 0; para darle la posicion al margen inferior, pero pierde medidas*/
+  background-color: #393838;
+  width: 100%;
+  padding: 5px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  /*text-decoration: para quitar el subrayado del hipervinculo*/
+}
+
+.main__footer ul {
+  list-style: none;
+  /*list-style none para quitar el punto de las listas*/
+}
+
+.main__footer ul li {
+  padding: 5px;
+  /*para que se vea horizontal*/
+}
+
+footer img {
+  width: 50px;
+  height: 38px;
+}
+
+@media screen and (min-width: 1024px) {
+  /*comienza el footer*/
+  footer img {
+    height: 100px;
+    width: 100px;
+  }
+  footer div p {
+    font-size: 24px;
+  }
+}

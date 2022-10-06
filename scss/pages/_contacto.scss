@@ -1,0 +1,38 @@
+@media screen and (min-width: 1024px) {
+  /* MAIN CONTACTO */
+  .main__contacto {
+    background-color: white;
+    color: black;
+    padding: 140px 0px 0px;
+    overflow: hidden;
+  }
+  .main__contacto--form {
+    text-align: center;
+    float: left;
+    margin-left: 300px;
+    width: 500px;
+  }
+  .main__contacto--form label {
+    display: inline-block;
+    text-align: center;
+    width: 128px;
+    padding: 10px;
+  }
+  .textarea {
+    padding: 10px;
+  }
+  textarea {
+    text-align: justify;
+    margin: 10px;
+  }
+  .submit--contacto {
+    float: left;
+    margin: 10px;
+  }
+  .reset--contacto {
+    float: right;
+    margin: 10px;
+  }
+}
+
+
