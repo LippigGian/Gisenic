@@ -26,7 +26,8 @@
   /*el submenu posicion abslouta asi sale del flujo y se mueve dentro de su padre relativo*/
   display: none;
 }
-
+.nav
+{
 ul {
   display: flex;
   list-style: none;
@@ -39,6 +40,7 @@ ul li {
 
 ul li a {
   text-decoration: none;
+}
 }
 
 @media screen and (min-width: 1024px) {

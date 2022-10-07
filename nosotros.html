@@ -20,42 +20,43 @@
     />
   </head>
   <body>
-    <header id="headerMain" class="main__header">
-      <!-- Comienza el nav -->
-      <div class="logo">
-        <a href="./index.html"
-          ><img src="./img/logo-png.png" alt="Logo Gisenic"
-        /></a>
-        <h2 class="nombreEmpresa">Gisenic</h2>
-      </div>
-      <!-- el logo va dentro del header pero no dentro del nav  -->
-      <nav>
-        <ul>
-          <li>
-            <a href="./nosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="./contacto.html">Contacto</a>
-          </li>
-          <li class="item">
-            <a href="./servicios.html">Servicios</a>
-            <ul>
-              <!-- menu con submenu que se despliega. Es decir, esta anidada-->
-              <li>Empresas</li>
-              <li>Industria</li>
-              <li>Habilitaciones</li>
-              <li>Capacitaciones</li>
-              <li>Comercio</li>
-              <li>Pyme</li>
-            </ul>
-            <!--Termina el submenu-->
-          </li>
-          <li>
-            <a href="./presupuesto.html">Presupuesto online</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Finaliza el nav  -->
+ 
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo-png.png" alt="..." height="36">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="./nosotros.html"
+            >Nosotros</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">Contactos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./presupuesto.html"
+            >Presupuesto online</a
+          >
+        </li>
+      </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     </header>
 
     <main class="main__nosotros">

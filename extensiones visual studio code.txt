@@ -1,0 +1,7 @@
+Auto Close Tag (Jun Han)
+Color Highlight (Sergii Naumov)
+indent-rainbow (oderwat)
+IntelliSense for CSS class names in HTML (Zignd)
+Live Server (Ritwick Dey)
+Material Theme Icons (Equinusocio)
+Prettier - Code formatter (Prettier)
