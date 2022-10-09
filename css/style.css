@@ -8494,8 +8494,7 @@ hr {
     font-size: 25px;
     width: 50%; }
   .main__secundario--titulo {
-    grid-area: titulo;
-    width: 100vw; }
+    grid-area: titulo; }
   .main__secundario--button {
     padding: 50px; }
   .main__secundario--button a button {
@@ -8606,38 +8605,31 @@ hr {
   .main__nosotros--img img {
     width: 40vw; } }
 
+.main__servicios__container--button {
+  display: grid; }
+
+main {
+  justify-content: center; }
+
+button {
+  width: 100%;
+  background-color: #1d67b2;
+  padding: 10px;
+  margin: 10px; }
+
 .main__servicios {
   text-align: center; }
   .main__servicios h1, .main__servicios .h1 {
     margin: 20px; }
 
-.main__servicios__container {
-  display: flex;
-  flex-direction: column; }
-
-.main__servicios__container--button {
-  display: flex;
-  flex-direction: column;
-  width: auto; }
-
 .main__servicios__container--img {
   display: none; }
 
-.main__servicios a {
-  width: auto;
-  margin: 0 60px; }
-
-.main__servicios--button {
-  margin: 0 50px 0 50px; }
-
 .main__servicios__container--button button {
-  font-size: 20px;
   padding: 10px;
   background-color: #1d67b2;
-  border-radius: 10%;
-  color: #ffff;
-  box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
-  margin: 10px; }
+  margin: 10px;
+  width: 100%; }
 
 .main__servicios__sections section h2, .main__servicios__sections section .h2 {
   color: #1d67b2;
@@ -8739,61 +8731,6 @@ footer img {
     width: 100px; }
   footer div p {
     font-size: 24px; } }
-
-/*COMIENZA EL HEADER*/
-.main__header {
-  display: block;
-  background-color: #1d67b2;
-  padding: 10px; }
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /*este display flex es porque el nombre esta dentro del logo, entonces me quedaba abajo*/ }
-
-.logo h2, .logo .h2 {
-  font-size: 19px; }
-
-.logo img {
-  width: 50px;
-  height: 38px;
-  margin-right: 10px; }
-
-.main__header ul ul {
-  /*el submenu posicion abslouta asi sale del flujo y se mueve dentro de su padre relativo*/
-  display: none; }
-
-.nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: center; }
-
-.nav ul li {
-  padding: 10px; }
-
-.nav ul li a {
-  text-decoration: none; }
-
-@media screen and (min-width: 1024px) {
-  /*COMIENZA EL HEADER*/
-  .main__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .logo img {
-    width: 100px;
-    height: 75px;
-    margin-right: 10px; }
-  .logo h2, .logo .h2 {
-    font-size: 35px; }
-  .main__header ul li a:hover {
-    /* background-color: #429fb8; */
-    /*resaltar el color para ver donde estoy parado en el nav*/
-    color: black;
-    /* me gusta mas como queda cambiandole el color y no el background; */ }
-  ul li a {
-    font-size: 20px; } }
 
 * {
   margin: 0;

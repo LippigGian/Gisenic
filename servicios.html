@@ -20,42 +20,39 @@
     />
   </head>
   <body>
-    <header id="headerMain" class="main__header">
-      <!-- Comienza el nav -->
-      <div class="logo">
-        <a href="./index.html"
-          ><img src="./img/logo-png.png" alt="Logo Gisenic"
-        /></a>
-        <h2 class="nombreEmpresa">Gisenic</h2>
-      </div>
-      <!-- el logo va dentro del header pero no dentro del nav  -->
-      <nav class="nav">
-        <ul>
-          <li>
-            <a href="./nosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="./contacto.html">Contacto</a>
-          </li>
-          <li class="item">
-            <a href="./servicios.html">Servicios</a>
-            <ul>
-              <!-- menu con submenu que se despliega. Es decir, esta anidada-->
-              <li>Empresas</li>
-              <li>Industria</li>
-              <li>Habilitaciones</li>
-              <li>Capacitaciones</li>
-              <li>Comercio</li>
-              <li>Pyme</li>
-            </ul>
-            <!--Termina el submenu-->
-          </li>
-          <li>
-            <a href="./presupuesto.html">Presupuesto online</a>
-          </li>
-        </ul>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./img/logo-png.png" alt="" width="45px"></a>
+          <a class="navbar-brand" href="index.html">Gisenic</a>
+      <!-- expand-lg que se expanda con la resolucion log
+      navbar-dark el color, proximamente se lo cambiare creando una variable
+      bg-primary el color del bg del nav
+      static-top que quede fijo en top -->
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="presupuesto.html">Presupuesto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              </li>
+          </div>
+        </div>
       </nav>
-      <!-- Finaliza el nav  -->
+    
     </header>
 
     <main>
@@ -68,12 +65,10 @@
             <a href="#ingenieria"> <button>INGENIERIA AMBIENTAL</button></a>
             <a href="#auditoria"> <button>AUDITORÍA LEGAL</button></a>
             <a href="#capacitaciones"><button>CAPACITACIONES</button></a>
-           <a href="#habilitaciones"><button>HABILITACIONES</button></a>
+            <a href="#habilitaciones"><button>HABILITACIONES</button></a>
             <a href="#sistemas"><button>SISTEMAS DE GESTIÓN</button></a>
             <a href="#hogar"><button>SEGURIDAD EN EL HOGAR</button></a>
             <a href="#proteccion"><button>PROTEGIÉNDONOS</button></a>
-          
-        
           </div>
           <div class="main__servicios__container--img">
             <img src="./img/servicios-img.png" alt="" />
@@ -81,238 +76,245 @@
         </div>
       </div>
       <div class="main__servicios__sections">
-      <section id="hys">
-        <h2>HIGIENE Y SEGURIDAD</h2>
-        <p>
-          El Servicio de Higiene y Seguridad en el Trabajo tiene como misión
-          fundamental preservar la salud psicofísica de los trabajadores y
-          preservar los bienes materiales puestos en función productiva. En tal
-          sentido, nuestro servicio profesional se aboca a determinar, promover
-          y mantener los ambientes laborales en las condiciones más adecuadas,
-          asesorando a la dirección de la empresa sobre las acciones que deben
-          ejecutarse para alcanzar las metas. La labor profesional comprende
-          acciones tales como realizar auditorias periódicas, estudios técnicos,
-          mediciones, evaluaciones ambientales, capacitaciones del personal,
-          elaboración de planes, análisis de riesgos, entre otras. Nuestra
-          empresa cuenta con la estructura, los profesionales y la experiencia
-          necesaria para asesorar a sus clientes tanto en INDUSTRIA como en OBRA
-          y AGRO; teniendo en cuenta, en cada caso, a la legislación específica
-          a la que se ven relacionadas. Por otro lado, siempre considerando como
-          base fundamental el cumplimentar con toda la legislación aplicable a
-          cada caso, se asesora de forma específica y personalizada a cada
-          empresa, para cubrir los requerimientos del Dec. 1338/96. Como parte
-          de nuestra política de mejora continua, generamos nuevos canales de
-          comunicación de forma permanente, de manera tal de poder asesorar de
-          forma más rápida y efectiva a nuestros clientes, con soporte en un
-          sistema de consulta de documentos activo las 24hs del día, los 365
-          días del año, y un equipo de trabajo abocado a despejar cualquier duda
-          que surja en la tarea diaria de su empresa.
-        </p>
-      </section>
-      <section id="ingenieria">
-        <h2>INGENIERÍA AMBIENTAL</h2>
-        <p>
-          Nuestro Departamento de Ingenieria Ambiental se encargará de
-          asesorarlo sobre cómo lograr un balance exitoso entre la
-          productividad, el cumplimiento del marco legal y la protección
-          ambiental. Hoy en día, las estrategias para lograr un desarrollo
-          sostenible integran la tecnología y el cuidado del medio ambiente. La
-          sostenibilidad se está introduciendo en todas las actividades humanas
-          y la producción y el desarrollo no son una excepción. Una buena
-          gestión, en su sentido más amplio, resulta ser el mejor garante de la
-          calidad, seguridad y productividad de una empresa. Exert Argentina
-          cuenta con un staff de especialistas que podrán asesorarlo con
-          eficacia en esta temática, permitiendo el tan apreciado desarrollo
-          empresarial de manera amigable con el medio ambiente.
-        </p>
-      </section>
-      <section id="auditoria">
-        <h2>AUDITORÍA LEGAL</h2>
-        <p>
-          La matriz legal es una herramienta que permite condensar todos los
-          requerimientos legales correspondientes a las actividades y productos
-          abocados a Seguridad Ocupacional, Medio ambiente y Habilitaciones. Las
-          normas ISO 14001 y OSHAS 18001 exigen que la organización identifique
-          y contemple cuáles de los aspectos antes mencionados son
-          significativos para sus actividades al momento de definir el sistema
-          de gestión ambiental. Además, la organización debe asegurarse de que
-          dichos aspectos sean considerados en el establecimiento,
-          implementación y mantenimiento del sistema de gestión ambiental. Esto
-          permitirá que la organización se concentre sobre las normativas
-          legales vigentes aplicables a sus actividades de una forma ordenada y
-          eficaz. Exert Argentina puede ayudarlo a sortear estas cuestiones y
-          brindarle la solución acorde a sus necesidades. Podemos brindarles los
-          siguientes servicios de manera combinada o individual:
-        </p>
-        <ul>
-          <li>
-            Auditoría integral de Higiene y Seguridad en el Trabajo,
-            Habilitaciones Industriales y Medio Ambiente
-          </li>
-          <li>Construcción de la matriz legal de su empresa.</li>
-          <li>
-            Actualización mensual de la legislación aplicable a la empresa en el
-            ámbito nacional, provincial y municipal, y asesoramiento sobre el
-            cumplimiento de las mismas
-          </li>
-          <li>
-            Orden de la documentación y control periódico del cumplimiento de la
-            matriz legal.
-          </li>
-          <li>
-            Asesoramiento técnico orientado a la defensa de los intereses de su
-            empresa para reducir gastos innecesarios y para optimizar las
-            presentaciones ante los distintos organismos estatales, evitando
-            redundancias y desarticulaciones que se producen cuando son
-            realizadas por distintos profesionales.
-          </li>
-          <li>
-            Asesoramiento para cumplimentar los requisitos legales tendientes a
-            facilitar la toma de decisiones de la dirección de la empresa.
-          </li>
-          <li>
-            Confección del plan de tareas e informes para cumplimentar los
-            requisitos de las Normas ISO 14001 Y OSHAS 18001.
-          </li>
-        </ul>
-        <p>
-          Exert Argentina se constituye como un referente en materia de Higiene
-          y Seguridad en el Trabajo, Habilitaciones Industriales y Medio
-          Ambiente orientado a empresas grandes, medianas y PyMES con
-          necesidades concretas. Nuestro liderazgo se basa en el conocimiento y
-          experiencia de nuestros profesionales y en la confiabilidad y la
-          calidad de nuestros servicios para brindar una solución integral a sus
-          problemas. Nuestros clientes nos avalan con su confianza y los ponemos
-          a su disposición para que den fe de ello.
-        </p>
-      </section>
-      <section id="capacitaciones">
-        <h2>CAPACITACIONES</h2>
-        <p>
-          Contamos con un equipo profesional especializado en CAPACITACIONES
-          para dar una respuesta específica y personalizada para cada necesidad
-          que pueda surgir en la dinámica operativa de cada empresa. Cada una de
-          nuestras propuestas tiene como objetivo principal generar un cambio en
-          la cultura de seguridad de las compañías, de forma tal que el impacto
-          sea notorio en el día a día de la empresa. Los enfoques pueden ser
-          tanto TEÓRICOS como PRÁCTICOS, utilizando casos representativos de
-          cada actividad para mejorar la identicación con los temas propuestos y
-          su correspondiente aprendizaje. De igual forma, pueden darse
-          MICROCHARLAS en puestos de trabajo, reuniones con grupos pequeños,
-          grupos grandes o jornadas completas, siempre atendiendo a las
-          necesidades de cada cliente. Estos son solo algunos de los temas de
-          nuestro catálogo:
-        </p>
-        <ul>
-          <li>Plan de evacuación</li>
-          <li>Riesgo eléctricoManejo seguro de autoelevadores Res. 960/15</li>
-          <li>Ergonomía en oficinas</li>
-          <li>Levantamiento y movimiento de pesos</li>
-          <li>Manejo de químicos</li>
-          <li>Primeros auxilios</li>
-          <li>Prevención y extinción de incendios</li>
-          <li>Trabajo en altura</li>
-          <li>Espacios confinados</li>
-          <li>Eficiencia energética</li>
-          <li>Gestión de residuos</li>
-        </ul>
-      </section>
-      <section id="habilitaciones">
-        <h2>HABILITACIONES</h2>
-        <p>
-          La creciente evolución de nuevas tecnologías, así como el desarrollo
-          cada vez más dinámico de la actividad industrial y de servicios, ha
-          sido acompañada por actualizaciones de la legislación aplicable a la
-          radicación y funcionamiento de los establecimientos. El cuidado del
-          medio ambiente, la higiene y seguridad de los ambientes laborales, el
-          uso del suelo, la generación de ruidos, la gestión de efluentes y
-          residuos, son temas que, entre otros, tanto municipios como estados
-          provinciales han tenido principalmente en cuenta al momento de regular
-          sus normas. En ese sentido, el Departamento de Habilitaciones cuenta
-          con la profesionalidad necesaria para ofrecer las mejores soluciones a
-          sus problemas, realizando los trámites y presentaciones necesarias
-          ante los entes nacionales, provinciales y municipales que hagan
-          posible la actividad productiva de su empresa. Tipo de habilitaciones:
-        </p>
-        <ul>
-          <li>Categorización de industrias.</li>
-          <li>
-            Dirección técnica de empresas de fabricación y recarga de cilindros
-            de gases comprimidos y matafuegos.
-          </li>
-          <li>Habilitación y rehabilitación de aparatos sometidos a presión</li>
-          <li>Planos de obra civil.</li>
-          <li>Planos de mensura (unificación, subdivisión).</li>
-          <li>Habilitación de montacargas, ascensores y puentes grúa.</li>
-          <li>
-            Habilitación de escaleras mecánicas, guardas mecanizadas de
-            vehículos y rampas móviles para vehículos.
-          </li>
-          <li>Plano de instalaciones electromecánicas.</li>
-          <li>
-            Habilitación y transferencia municipal de industrias y comercios.
-          </li>
-          <li>Plano de instalaciones de telefonía celular.</li>
-          <li>Legajo técnico de obras.</li>
-          <li>Planos de instalaciones contra incendios.</li>
-          <li>Dirección técnica de empresas carroceras.</li>
-          <li>Habilitación de carteles publicitarios.</li>
-          <li>Permiso de trabajo nocturno.</li>
-        </ul>
-      </section>
-      <section id="sistemas">
-        <h2>SISTEMAS DE GESTIÓN</h2>
-        <p>
-          Sistema de gestion Los Sistemas de Gestión ayudan a las empresas a
-          satisfacer los requerimientos de calidad de sus clientes y cumplir con
-          las exigencias reglamentarias en materia de higiene y seguridad y
-          medio ambiente. Nuestro Departamento de Sistema de Gestión se ocupa de
-          asesorar sobre la implementación de Normas orientadas a la Ostidad,
-          Mecieramibiante y de Seguridad y Salud Ocupacional. Se definen los
-          objetivos de mejora y elaboran los procedimientos operativos de
-          control de las actividades productivas o de la prestación de servicios
-          sobre la base de la información relevada. la certificación se
-          complementa con diversas tareas como auditorías internas,
-          capacitaciones, registros, sicocración de indices, etc…
-        </p>
-      </section>
-      <section id="hogar">
-        <h2>¿CÓMO PREVENIR ACCIDENTES EN EL HOGAR?</h2>
-        <p>
-          Seguridad en el hogar Los accidentes domésticos son el primer motivo
-          de muerte prematura para los menores de 30 años. Esta circunstancia es
-          inaceptable puesto que se trata, en la mayoría de los casos, de
-          accidentes que podrían haberse evitado. Por eso la importancia para
-          prevenirlos. Tanto las personas adultas como los niños pueden sufrir
-          accidentes en el hogar, ya sea por curiosidad, negligencia o
-          desconocimiento; pero no todos los miembros de la familia tienen las
-          mismas posibilidades de sufrirlo debido a las habilidades de defensa
-          con que cuentan. Generalmente los más propensos y expuestos a los
-          riesgos son los niños menores de 5 años, adultos mayores de 65 años y
-          amas de casa mayores de 45 años. Los accidentes que se producen en el
-          hogar son principalmente:
-        </p>
-        <ul>
-          <li>Traumatismos</li>
-          <li>Intoxicación</li>
-          <li>Quemaduras</li>
-          <li>Electrocución</li>
-          <li>Asfixia</li>
-          <li>Heridas</li>
-        </ul>
-      </section>
-      <section id="proteccion">
-        <h2>PROTEGIÉNDONOS</h2>
-        <h3>La seguridad la hacemos entre TODOS</h3>
-        <p>
-          Si detectaste alguna situación que puede originar un accidente en tu
-          lugar de trabajo o tenés dudas de si puede afectar tu salud o la de
-          tus compañeros, avisanos desde la sección de contacto. Nosotros nos encargaremos de estudiarla y
-          proponer las mejoras que correspondan. Todos los comentarios que
-          recibamos los trataremos de forma anónima y confidencial.
-        </p>
-      </section>
-    </div>
+        <section id="hys">
+          <h2>HIGIENE Y SEGURIDAD</h2>
+          <p>
+            El Servicio de Higiene y Seguridad en el Trabajo tiene como misión
+            fundamental preservar la salud psicofísica de los trabajadores y
+            preservar los bienes materiales puestos en función productiva. En
+            tal sentido, nuestro servicio profesional se aboca a determinar,
+            promover y mantener los ambientes laborales en las condiciones más
+            adecuadas, asesorando a la dirección de la empresa sobre las
+            acciones que deben ejecutarse para alcanzar las metas. La labor
+            profesional comprende acciones tales como realizar auditorias
+            periódicas, estudios técnicos, mediciones, evaluaciones ambientales,
+            capacitaciones del personal, elaboración de planes, análisis de
+            riesgos, entre otras. Nuestra empresa cuenta con la estructura, los
+            profesionales y la experiencia necesaria para asesorar a sus
+            clientes tanto en INDUSTRIA como en OBRA y AGRO; teniendo en cuenta,
+            en cada caso, a la legislación específica a la que se ven
+            relacionadas. Por otro lado, siempre considerando como base
+            fundamental el cumplimentar con toda la legislación aplicable a cada
+            caso, se asesora de forma específica y personalizada a cada empresa,
+            para cubrir los requerimientos del Dec. 1338/96. Como parte de
+            nuestra política de mejora continua, generamos nuevos canales de
+            comunicación de forma permanente, de manera tal de poder asesorar de
+            forma más rápida y efectiva a nuestros clientes, con soporte en un
+            sistema de consulta de documentos activo las 24hs del día, los 365
+            días del año, y un equipo de trabajo abocado a despejar cualquier
+            duda que surja en la tarea diaria de su empresa.
+          </p>
+        </section>
+        <section id="ingenieria">
+          <h2>INGENIERÍA AMBIENTAL</h2>
+          <p>
+            Nuestro Departamento de Ingenieria Ambiental se encargará de
+            asesorarlo sobre cómo lograr un balance exitoso entre la
+            productividad, el cumplimiento del marco legal y la protección
+            ambiental. Hoy en día, las estrategias para lograr un desarrollo
+            sostenible integran la tecnología y el cuidado del medio ambiente.
+            La sostenibilidad se está introduciendo en todas las actividades
+            humanas y la producción y el desarrollo no son una excepción. Una
+            buena gestión, en su sentido más amplio, resulta ser el mejor
+            garante de la calidad, seguridad y productividad de una empresa.
+            Exert Argentina cuenta con un staff de especialistas que podrán
+            asesorarlo con eficacia en esta temática, permitiendo el tan
+            apreciado desarrollo empresarial de manera amigable con el medio
+            ambiente.
+          </p>
+        </section>
+        <section id="auditoria">
+          <h2>AUDITORÍA LEGAL</h2>
+          <p>
+            La matriz legal es una herramienta que permite condensar todos los
+            requerimientos legales correspondientes a las actividades y
+            productos abocados a Seguridad Ocupacional, Medio ambiente y
+            Habilitaciones. Las normas ISO 14001 y OSHAS 18001 exigen que la
+            organización identifique y contemple cuáles de los aspectos antes
+            mencionados son significativos para sus actividades al momento de
+            definir el sistema de gestión ambiental. Además, la organización
+            debe asegurarse de que dichos aspectos sean considerados en el
+            establecimiento, implementación y mantenimiento del sistema de
+            gestión ambiental. Esto permitirá que la organización se concentre
+            sobre las normativas legales vigentes aplicables a sus actividades
+            de una forma ordenada y eficaz. Exert Argentina puede ayudarlo a
+            sortear estas cuestiones y brindarle la solución acorde a sus
+            necesidades. Podemos brindarles los siguientes servicios de manera
+            combinada o individual:
+          </p>
+          <ul>
+            <li>
+              Auditoría integral de Higiene y Seguridad en el Trabajo,
+              Habilitaciones Industriales y Medio Ambiente
+            </li>
+            <li>Construcción de la matriz legal de su empresa.</li>
+            <li>
+              Actualización mensual de la legislación aplicable a la empresa en
+              el ámbito nacional, provincial y municipal, y asesoramiento sobre
+              el cumplimiento de las mismas
+            </li>
+            <li>
+              Orden de la documentación y control periódico del cumplimiento de
+              la matriz legal.
+            </li>
+            <li>
+              Asesoramiento técnico orientado a la defensa de los intereses de
+              su empresa para reducir gastos innecesarios y para optimizar las
+              presentaciones ante los distintos organismos estatales, evitando
+              redundancias y desarticulaciones que se producen cuando son
+              realizadas por distintos profesionales.
+            </li>
+            <li>
+              Asesoramiento para cumplimentar los requisitos legales tendientes
+              a facilitar la toma de decisiones de la dirección de la empresa.
+            </li>
+            <li>
+              Confección del plan de tareas e informes para cumplimentar los
+              requisitos de las Normas ISO 14001 Y OSHAS 18001.
+            </li>
+          </ul>
+          <p>
+            Exert Argentina se constituye como un referente en materia de
+            Higiene y Seguridad en el Trabajo, Habilitaciones Industriales y
+            Medio Ambiente orientado a empresas grandes, medianas y PyMES con
+            necesidades concretas. Nuestro liderazgo se basa en el conocimiento
+            y experiencia de nuestros profesionales y en la confiabilidad y la
+            calidad de nuestros servicios para brindar una solución integral a
+            sus problemas. Nuestros clientes nos avalan con su confianza y los
+            ponemos a su disposición para que den fe de ello.
+          </p>
+        </section>
+        <section id="capacitaciones">
+          <h2>CAPACITACIONES</h2>
+          <p>
+            Contamos con un equipo profesional especializado en CAPACITACIONES
+            para dar una respuesta específica y personalizada para cada
+            necesidad que pueda surgir en la dinámica operativa de cada empresa.
+            Cada una de nuestras propuestas tiene como objetivo principal
+            generar un cambio en la cultura de seguridad de las compañías, de
+            forma tal que el impacto sea notorio en el día a día de la empresa.
+            Los enfoques pueden ser tanto TEÓRICOS como PRÁCTICOS, utilizando
+            casos representativos de cada actividad para mejorar la identicación
+            con los temas propuestos y su correspondiente aprendizaje. De igual
+            forma, pueden darse MICROCHARLAS en puestos de trabajo, reuniones
+            con grupos pequeños, grupos grandes o jornadas completas, siempre
+            atendiendo a las necesidades de cada cliente. Estos son solo algunos
+            de los temas de nuestro catálogo:
+          </p>
+          <ul>
+            <li>Plan de evacuación</li>
+            <li>Riesgo eléctricoManejo seguro de autoelevadores Res. 960/15</li>
+            <li>Ergonomía en oficinas</li>
+            <li>Levantamiento y movimiento de pesos</li>
+            <li>Manejo de químicos</li>
+            <li>Primeros auxilios</li>
+            <li>Prevención y extinción de incendios</li>
+            <li>Trabajo en altura</li>
+            <li>Espacios confinados</li>
+            <li>Eficiencia energética</li>
+            <li>Gestión de residuos</li>
+          </ul>
+        </section>
+        <section id="habilitaciones">
+          <h2>HABILITACIONES</h2>
+          <p>
+            La creciente evolución de nuevas tecnologías, así como el desarrollo
+            cada vez más dinámico de la actividad industrial y de servicios, ha
+            sido acompañada por actualizaciones de la legislación aplicable a la
+            radicación y funcionamiento de los establecimientos. El cuidado del
+            medio ambiente, la higiene y seguridad de los ambientes laborales,
+            el uso del suelo, la generación de ruidos, la gestión de efluentes y
+            residuos, son temas que, entre otros, tanto municipios como estados
+            provinciales han tenido principalmente en cuenta al momento de
+            regular sus normas. En ese sentido, el Departamento de
+            Habilitaciones cuenta con la profesionalidad necesaria para ofrecer
+            las mejores soluciones a sus problemas, realizando los trámites y
+            presentaciones necesarias ante los entes nacionales, provinciales y
+            municipales que hagan posible la actividad productiva de su empresa.
+            Tipo de habilitaciones:
+          </p>
+          <ul>
+            <li>Categorización de industrias.</li>
+            <li>
+              Dirección técnica de empresas de fabricación y recarga de
+              cilindros de gases comprimidos y matafuegos.
+            </li>
+            <li>
+              Habilitación y rehabilitación de aparatos sometidos a presión
+            </li>
+            <li>Planos de obra civil.</li>
+            <li>Planos de mensura (unificación, subdivisión).</li>
+            <li>Habilitación de montacargas, ascensores y puentes grúa.</li>
+            <li>
+              Habilitación de escaleras mecánicas, guardas mecanizadas de
+              vehículos y rampas móviles para vehículos.
+            </li>
+            <li>Plano de instalaciones electromecánicas.</li>
+            <li>
+              Habilitación y transferencia municipal de industrias y comercios.
+            </li>
+            <li>Plano de instalaciones de telefonía celular.</li>
+            <li>Legajo técnico de obras.</li>
+            <li>Planos de instalaciones contra incendios.</li>
+            <li>Dirección técnica de empresas carroceras.</li>
+            <li>Habilitación de carteles publicitarios.</li>
+            <li>Permiso de trabajo nocturno.</li>
+          </ul>
+        </section>
+        <section id="sistemas">
+          <h2>SISTEMAS DE GESTIÓN</h2>
+          <p>
+            Sistema de gestion Los Sistemas de Gestión ayudan a las empresas a
+            satisfacer los requerimientos de calidad de sus clientes y cumplir
+            con las exigencias reglamentarias en materia de higiene y seguridad
+            y medio ambiente. Nuestro Departamento de Sistema de Gestión se
+            ocupa de asesorar sobre la implementación de Normas orientadas a la
+            Ostidad, Mecieramibiante y de Seguridad y Salud Ocupacional. Se
+            definen los objetivos de mejora y elaboran los procedimientos
+            operativos de control de las actividades productivas o de la
+            prestación de servicios sobre la base de la información relevada. la
+            certificación se complementa con diversas tareas como auditorías
+            internas, capacitaciones, registros, sicocración de indices, etc…
+          </p>
+        </section>
+        <section id="hogar">
+          <h2>¿CÓMO PREVENIR ACCIDENTES EN EL HOGAR?</h2>
+          <p>
+            Seguridad en el hogar Los accidentes domésticos son el primer motivo
+            de muerte prematura para los menores de 30 años. Esta circunstancia
+            es inaceptable puesto que se trata, en la mayoría de los casos, de
+            accidentes que podrían haberse evitado. Por eso la importancia para
+            prevenirlos. Tanto las personas adultas como los niños pueden sufrir
+            accidentes en el hogar, ya sea por curiosidad, negligencia o
+            desconocimiento; pero no todos los miembros de la familia tienen las
+            mismas posibilidades de sufrirlo debido a las habilidades de defensa
+            con que cuentan. Generalmente los más propensos y expuestos a los
+            riesgos son los niños menores de 5 años, adultos mayores de 65 años
+            y amas de casa mayores de 45 años. Los accidentes que se producen en
+            el hogar son principalmente:
+          </p>
+          <ul>
+            <li>Traumatismos</li>
+            <li>Intoxicación</li>
+            <li>Quemaduras</li>
+            <li>Electrocución</li>
+            <li>Asfixia</li>
+            <li>Heridas</li>
+          </ul>
+        </section>
+        <section id="proteccion">
+          <h2>PROTEGIÉNDONOS</h2>
+          <h3>La seguridad la hacemos entre TODOS</h3>
+          <p>
+            Si detectaste alguna situación que puede originar un accidente en tu
+            lugar de trabajo o tenés dudas de si puede afectar tu salud o la de
+            tus compañeros, avisanos desde la sección de contacto. Nosotros nos
+            encargaremos de estudiarla y proponer las mejoras que correspondan.
+            Todos los comentarios que recibamos los trataremos de forma anónima
+            y confidencial.
+          </p>
+        </section>
+      </div>
     </main>
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">

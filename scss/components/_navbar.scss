@@ -1,70 +1,70 @@
-/*COMIENZA EL HEADER*/
-.main__header {
-  display: block;
-  background-color: #1d67b2;
-  padding: 10px;
-}
+// /*COMIENZA EL HEADER*/
+// .main__header {
+//   display: block;
+//   background-color: #1d67b2;
+//   padding: 10px;
+// }
 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /*este display flex es porque el nombre esta dentro del logo, entonces me quedaba abajo*/
-}
+// .logo {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   /*este display flex es porque el nombre esta dentro del logo, entonces me quedaba abajo*/
+// }
 
-.logo h2 {
-  font-size: 19px;
-}
+// .logo h2 {
+//   font-size: 19px;
+// }
 
-.logo img {
-  width: 50px;
-  height: 38px;
-  margin-right: 10px;
-}
+// .logo img {
+//   width: 50px;
+//   height: 38px;
+//   margin-right: 10px;
+// }
 
-.main__header ul ul {
-  /*el submenu posicion abslouta asi sale del flujo y se mueve dentro de su padre relativo*/
-  display: none;
-}
-.nav
-{
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
+// .main__header ul ul {
+//   /*el submenu posicion abslouta asi sale del flujo y se mueve dentro de su padre relativo*/
+//   display: none;
+// }
+// .nav
+// {
+// ul {
+//   display: flex;
+//   list-style: none;
+//   justify-content: center;
+// }
 
-ul li {
-  padding: 10px;
-}
+// ul li {
+//   padding: 10px;
+// }
 
-ul li a {
-  text-decoration: none;
-}
-}
+// ul li a {
+//   text-decoration: none;
+// }
+// }
 
-@media screen and (min-width: 1024px) {
-  /*COMIENZA EL HEADER*/
-  .main__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo img {
-    width: 100px;
-    height: 75px;
-    margin-right: 10px;
-  }
-  .logo h2 {
-    font-size: 35px;
-  }
-  .main__header ul li a:hover {
-    /* background-color: #429fb8; */
-    /*resaltar el color para ver donde estoy parado en el nav*/
-    color: black;
-    /* me gusta mas como queda cambiandole el color y no el background; */
-  }
-  ul li a {
-    font-size: 20px;
-  }
-}
+// @media screen and (min-width: 1024px) {
+//   /*COMIENZA EL HEADER*/
+//   .main__header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+//   .logo img {
+//     width: 100px;
+//     height: 75px;
+//     margin-right: 10px;
+//   }
+//   .logo h2 {
+//     font-size: 35px;
+//   }
+//   .main__header ul li a:hover {
+//     /* background-color: #429fb8; */
+//     /*resaltar el color para ver donde estoy parado en el nav*/
+//     color: black;
+//     /* me gusta mas como queda cambiandole el color y no el background; */
+//   }
+//   ul li a {
+//     font-size: 20px;
+//   }
+// }
