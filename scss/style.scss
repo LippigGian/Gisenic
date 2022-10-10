@@ -1,4 +1,35 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+// todos las variables deben ir antes de bootstrap
+// Mapa de colores. Para que funcione necesito esos 3 import antes.
+$custom-colors: (
+  "nav-color": #1d67b2
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
 // Include any default variable overrides here (though functions won't be available)
+
+
+$azul: #1d67b2;
+$gris: #34373A;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "nav-color":       $azul,
+  "footer-color":   $gris
+);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 

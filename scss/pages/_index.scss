@@ -1,4 +1,3 @@
-
 .main__principal {
   background-color: #FFFF;
   color: rgb(0, 0, 0);
@@ -24,6 +23,7 @@
 .main__principal--img img {
   border-radius: 15px;
   padding-top: 30px;
+  width: 95%;
 }
 
 hr {
@@ -69,11 +69,25 @@ hr {
   background-color: rgb(66, 65, 65);
 }
 
-/*el banner causaba overflow*/
-.main__terciario img {
-  // width: 100%;
-  // height: auto;
+.main__terciario__img{
+  padding: 10px;
+  background-color: #1D67B2;
+  display: flex;
+  justify-content: space-evenly;
 
+}
+.main__terciario__text
+{
+  @extend .main__terciario__img;
+ color: #FFFF;
+ /*agregar borde redondeado*/
+}
+
+/*for de 1 a 3 (con el 3 incluido, por eso es through, sino podria ser to) para darle estilos a las 3 imagenes del banner*/
+@for $i from 1 through 3 {
+  .main__terciario__img--#{$i}
+  { width: 100px;
+    height: 100px;}
 }
 
 
@@ -159,10 +173,7 @@ hr {
   .main__secundario--button a button {
     font-size: 40px;
   }
-  .main__terciario {
-    // grid-area: banner;
-  }
-
+ 
   @keyframes movimiento {
     0%,
     100% {
@@ -205,23 +216,16 @@ hr {
     transform: translate(-160px, -75px) scale(1.15);
     background-color: #e4eaf0;
   }
-  .main__terciario__img{
-    padding: 10px;
-    background-color: #1D67B2;
-    display: flex;
-    justify-content: space-evenly;
-  
-  }
-  .main__terciario__text
-  {
-    @extend .main__terciario__img;
-    color: #FFFF;
-  }
-/*for de 1 a 3 (con el 3 incluido, por eso es through, sino podria ser to) para darle estilos a las 3 imagenes del banner*/
-  @for $i from 1 through 3 {
-    .main__terciario__img--#{$i}
-    { width: 100px;
-      height: 100px;}
-  }
+.main__terciario__img
+{
 
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+.main__terciario
+{
+  width: 90%;
+  margin: auto;
+ 
+}
 }

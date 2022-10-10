@@ -63,7 +63,6 @@ button
   border-radius: 5px;
   padding: 20px;
   margin: 20px 15px;
-  background-color: #f8f9fa;
   text-align: justify;
 }
 
@@ -126,7 +125,7 @@ button
     border-radius: 5px;
     padding: 10px;
     margin: 20px 35px;
-    background-color: #f8f9fa;
+ background-color: rgba($color: #ffff, $alpha: 0.5);
   }
   .main__servicios__container--button a button:hover {
     background-color: rgb(66, 65, 65);
