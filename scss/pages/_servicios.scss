@@ -13,46 +13,32 @@ button
   padding: 10px;
   margin: 10px;
 }
-// a{
-//   display: inline-block;
-//   width: 90%;
-// }
+.main__servicios__container--button a button
+ {
+ width: 100vw * 90/100;
+}
+
 .main__servicios {
   text-align: center;
   h1 {
     margin: 20px;
   }
 }
-.main__servicios__container {
-  //  display: flex;
-  //  flex-direction: column;
-}
-.main__servicios__container--button {
-  // display: flex;
-  // flex-direction: column;
-  // width: auto;
-}
+
 .main__servicios__container--img {
   display: none;
 }
-.main__servicios a {
-  // width: auto;
-  // margin: 0 60px;
-}
-.main__servicios--button {
-  // margin: 0 50px 0 50px;
-}
+
 .main__servicios__container--button button {
-  // font-size: 20px;
+  font-size: 25px;
   padding: 10px;
   background-color: #1d67b2;
-  // border-radius: 10%;
-  // color: #ffff;
-  // box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
+  border-radius: 10%;
+  color: #ffff;
+  box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
   margin: 10px;
-  // width: 300px;
-  // height: 75px;
-  width: 100%;
+  width: 300px;
+  height: 75px;
 }
 .main__servicios__sections section h2 {
   color: #1d67b2;
@@ -65,6 +51,7 @@ button
   margin: 20px 15px;
   text-align: justify;
 }
+
 
 @media screen and (min-width: 768px) {
   // TABLET
@@ -82,22 +69,19 @@ button
     width: auto;
     margin: 0;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
+ 
   // DESKTOP
   .main__servicios__container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-items: center;
   }
-  .main__servicios__container--button {
-    // width: 49%;
-    // width: auto;
-  }
+
   .main__servicios__container--img {
-    // width: 49%;
-    // width: auto;
     display: block;
   }
 
@@ -107,13 +91,15 @@ button
     justify-items: center;
     margin: 10px;
   }
+  .main__servicios__container--button a button
+  {
+    width: 100vw * 15/100;
+  }
 
   .main__servicios--hr {
     height: 10px;
     width: 25%;
-
     background-color: #1d67b2;
-
     margin: auto;
   }
 
@@ -121,24 +107,10 @@ button
     text-align: center;
   }
   .main__servicios__sections section {
-    border: solid 1px #ffff;
-    border-radius: 5px;
-    padding: 10px;
     margin: 20px 35px;
- background-color: rgba($color: #ffff, $alpha: 0.5);
+    background-color: rgba($color: #ffff, $alpha: 0.5);
   }
   .main__servicios__container--button a button:hover {
     background-color: rgb(66, 65, 65);
-  }
-  .main__servicios__container--button button {
-    font-size: 25px;
-    padding: 10px;
-    background-color: #1d67b2;
-    border-radius: 10%;
-    color: #ffff;
-    box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
-    margin: 10px;
-    width: 300px;
-    height: 75px;
   }
 }

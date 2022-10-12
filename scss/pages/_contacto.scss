@@ -1,6 +1,60 @@
+.main__principal__contacto
+{
+  margin: 15px;
+}
 .main__secundario__contacto
 {
-  display: flex;
+display: flex;
+flex-direction: column-reverse;
+}
+.main__secundario__contacto--section1 img
+{
+
+  width: 150px;
+
+}
+
+.main__secundario__contacto--section1--items
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+& .iframe
+{
+  width: 90%;
+  margin-bottom: 25px;
+}
+}
+.main__secundario__contacto--section2
+{
+margin: 50px auto;
+ }
+
+.main__secundario__contacto--form
+{ background-color: beige;
+  box-shadow: 8px 8px 8px 8px rgba(30, 30, 32, 0.2);
+  border-radius: 50px;
+  padding: 15px;
+}
+.main__secundario__contacto--section2 form .container .row
+
+{
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .main__secundario__contacto--section2 
+  {
+    width: 90%;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+.main__secundario__contacto
+{
+
+  flex-direction: row;
   margin-top: 50px;
 }
 .main__secundario__contacto--section1
@@ -10,71 +64,24 @@ display: flex;
 flex-direction: column;
 align-items: flex-end;
 
-
-& img{
- width: 150px;
-}
 }
 .main__secundario__contacto--section1--items
 {
-display: flex;
-flex-direction: column;
-align-items: center;
 padding-right: 150px;
+& .iframe
+{
+  width: 100%;
+  box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
+}
 }
 .main__secundario__contacto--section2
 {
   flex-basis: 50%;
   margin-bottom: 50px;
- 
-
-
-}
+ }
 .main__secundario__contacto--form
-{ background-color: beige;
-  box-shadow: 8px 8px 8px 8px rgba(30, 30, 32, 0.2);
-  border-radius: 50px;
+{ 
   width: 50%;
-  padding: 15px;
-}
-.iframe
-{
-  box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
 }
 
-@media screen and (min-width: 1024px) {
-  /* MAIN CONTACTO */
-  .main__contacto {
-    background-color: white;
-    color: black;
-    padding: 140px 0px 0px;
-    overflow: hidden;
-  }
-  .main__contacto--form {
-    text-align: center;
-    float: left;
-    margin-left: 300px;
-    width: 500px;
-  }
-  .main__contacto--form label {
-    display: inline-block;
-    text-align: center;
-    width: 128px;
-    padding: 10px;
-  }
-  .textarea {
-    padding: 10px;
-  }
-  textarea {
-    text-align: justify;
-    margin: 10px;
-  }
-  .submit--contacto {
-    float: left;
-    margin: 10px;
-  }
-  .reset--contacto {
-    float: right;
-    margin: 10px;
-  }
 }
