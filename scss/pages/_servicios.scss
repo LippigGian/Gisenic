@@ -1,4 +1,19 @@
 // MOBILE
+.main__servicios__primario--bg {
+  background-image: url(../../img/servicios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+   width: auto;
+  height: 100vw *60 /100;
+  display: flex;
+  justify-content: center;
+  & h1
+  {
+    margin-top: 15px;
+    font-size: 35px;
+    color: #ffff;
+  }
+}
 .main__servicios__container--button {
   display: grid;
 }
@@ -73,7 +88,16 @@ button
 }
 
 @media screen and (min-width: 1024px) {
- 
+  .main__servicios__primario--bg {
+    background-image: url(../../img/servicios.jpg);
+    height: 100vh;
+    margin-bottom: 40px;
+    & h1
+    {
+      margin-top: 150px;
+      font-size: 99px;
+    }
+  }
   // DESKTOP
   .main__servicios__container {
     display: grid;
