@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gisenic</title>
+    <title>
+      Contacto - Contactenos, te ayudamos con la gestión integral de tu empresa
+    </title>
+    <meta
+      name="keywords"
+      content="contacta seguridad e higiene, servicio integral, abono, contacto directo, telefono, formulario"
+    />
+    <meta
+      name="description"
+      content="En Gisenic nos tomamos las cosas en serio. ¿Estás cansado de pagarle a un profesional que pasa cada tanto, toma un café, charla de temas cotidianos y firma un libro? Confiá en nosotros. Trabajamos en serio."
+    />
     <link rel="icon" href="./img/favicon.png" />
     <!-- CSS only -->
     <link
@@ -21,181 +31,285 @@
     />
   </head>
   <body>
-    <header id="headerMain" class="main__header">
-      <!-- Comienza el nav -->
-      <div class="logo">
-        <a href="./index.html"
-          ><img src="./img/logo-png.png" alt="Logo Gisenic"
-        /></a>
-        <h2 class="nombreEmpresa">Gisenic</h2>
-      </div>
-      <!-- el logo va dentro del header pero no dentro del nav  -->
-      <nav>
-        <ul>
-          <li>
-            <a href="./nosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="./contacto.html">Contacto</a>
-          </li>
-          <li class="item">
-            <a href="./servicios.html">Servicios</a>
-            <ul>
-              <!-- menu con submenu que se despliega. Es decir, esta anidada-->
-              <li>Empresas</li>
-              <li>Industria</li>
-              <li>Habilitaciones</li>
-              <li>Capacitaciones</li>
-              <li>Comercio</li>
-              <li>Pyme</li>
-            </ul>
-            <!--Termina el submenu-->
-          </li>
-          <li>
-            <a href="./presupuesto.html">Presupuesto online</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Finaliza el nav  -->
-    </header>
-    <main>
-      <form>
-        <div class="row justify-content-center mt-5">
-          <div class="col-9 col-md-3">
-            <label for="inputNombre">Nombre</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputNombre"
-              placeholder="Escribe tu nombre"
-            />
-          </div>
-          <div class="col-9 col-md-3">
-            <label for="inputApellido">Apellido</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputApellido"
-              placeholder="Escribe tu apellido"
-            />
-          </div>
-        </div>
-        <div class="row justify-content-center mt-2">
-          <div class="col-9 col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail4"
-              placeholder="Escribe tu correo electrónico"
-            />
-          </div>
-        </div>
-        <div class="row justify-content-center mt-2">
-          <div class="col-9 col-md-6">
-            <label for="inputPhone">Teléfono</label>
-            <input
-              type="phone"
-              class="form-control"
-              id="inputPhone"
-              placeholder="Escribe tu número de teléfono"
-            />
-          </div>
-        </div>
-        <div class="row justify-content-center m-2">
-          <div class="col-9 col-md-3">
-            <label for="inputDireccion">Dirección</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputDireccion"
-              placeholder="Escribe tu dirección"
-            />
-          </div>
-          <div class="col-9 col-md-2">
-            <label for="inputLocalidad">Localidad</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputLocalidad"
-              placeholder="Escribe tu localidad"
-            />
-          </div>
-          <div class="col-6 col-md-2">
-            <label for="inputCp">Código postal</label>
-            <input
-              type="number"
-              class="form-control"
-              id="inputCp"
-              placeholder="Escribe tu código postal"
-            />
-          </div>
-        </div>
-        <div class="row justify-content-center m-2">
-          <div class="form-floating col-8">
-            <textarea
-              class="form-control"
-              placeholder="Dejé aquí su mensaje"
-              id="floatingTextarea2"
-              style="height: 100px"
-            ></textarea>
-            <label class="text-justify ms-3" for="floatingTextarea2"
-              >Mensaje</label
-            >
-          </div>
-        </div>
+    <!-- comienza el header -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-nav-color navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="./img/logo-png.png" alt="logo empresa" width="45px"
+          /></a>
+          <a class="navbar-brand" href="index.html">Gisenic</a>
+          <!-- expand-lg que se expanda con la resolucion log
+      navbar-dark el color, proximamente se lo cambiare creando una variable
+      bg-primary el color del bg del nav
+      static-top que quede fijo en top -->
 
-        <div class="form-check offset-2 offset-md-5">
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck">
-            Acepto términos, condiciones y privacidad.
-          </label>
-        </div>
-        <!-- d-grid activa el display grid en bootstrap -->
-        <!-- gap era en grid el espacio que hay entre filas y columnas -->
-        <!-- mx auto porque se refiere al margin en el eje x -->
-        <div class="d-grid gap-2 col-2 mx-auto mt-2 mb-5">
-          <button class="btn btn-primary" type="button">Enviar</button>
-          <a class="btn btn-primary" href="contacto.html" role="button"
-            >Resetear</a
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="faq.html"
+                  >Faq</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </form>
+      </nav>
+    </header>
+    <!-- Finaliza el header -->
+
+    <main>
+      <div class="main__principal__contacto">
+        <div class="main__principal__contacto--bg">
+          <h1>CONTÁCTANOS</h1>
+        </div>
+        <div class="m-2">
+          <h2 class="text-center m-5">
+            Dejanos tu consulta o cotizá un servicio de Seguridad e Higiene con
+            nosotros.
+          </h2>
+          <h3 class="text-center">
+            A la brevedad nos pondremos en contacto con usted.
+          </h3>
+        </div>
+      </div>
+      <div class="main__secundario__contacto">
+        <div class="main__secundario__contacto--section1">
+          <div class="main__secundario__contacto--section1--items">
+            <img
+              src="./img/logo-png.png"
+              alt="fondo de pantalla personal empresa"
+            />
+            <p>GISENIC</p>
+            <p>11-3212-3212</p>
+            <p>info@gisenic.com.ar</p>
+            <p>Av. Córdoba 6193. 1° A, C1427, CABA, Buenos Aires</p>
+            <iframe
+              class="iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.828709043137!2d-58.4473267!3d-34.583200500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5ee8d5fe577%3A0xe835d88700726776!2sAv.%20C%C3%B3rdoba%206193%2C%20C1427BZB%20CABA!5e0!3m2!1ses-419!2sar!4v1665509290020!5m2!1ses-419!2sar"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="main__secundario__contacto--section2">
+          <form class="main__secundario__contacto--form">
+            <div class="container">
+              <div class="row mt-2">
+                <div class="col-9 col-md-12">
+                  <label for="inputNombre">Ingrese su nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputNombre"
+                    placeholder="Nombre y apellido"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mt-2">
+                <div class="col-9 col-md-12">
+                  <label for="inputApellido">Apellido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputApellido"
+                    placeholder="Escribe tu apellido"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mt-3">
+                <div class="col-9 col-md-12">
+                  <label for="inputEmail4">Correo electrónico</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder="Correo electrónico"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mt-3">
+                <div class="col-9 col-md-12">
+                  <label for="inputRs">Razón social</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputRs"
+                    placeholder="Razón social"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mt-3">
+                <div class="col-9 col-md-12">
+                  <label for="inputServicio">Servicio a cotizar</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputServicio"
+                    placeholder="Servicio a cotizar"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mt-3">
+                <div class="col-9 col-md-12">
+                  <label for="inputEmpleados">Cantidad de empleados</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputEmpleados"
+                    placeholder="Cantidad de empleados"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mt-3">
+                <div class="col-9 col-md-12">
+                  <label for="inputPhone">Teléfono</label>
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="inputPhone"
+                    placeholder="Teléfono"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mt-3">
+                <div class="col-9 col-md-12">
+                  <label for="inputMetros">Metros cuadrados</label>
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="inputMetros"
+                    placeholder="Cantidad de metros cuadrados"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row m-3">
+                <div class="form-floating col-12">
+                  <textarea
+                    class="form-control"
+                    placeholder="Dejé aquí su mensaje"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                  <label class="text-justify ms-3" for="floatingTextarea2"
+                    >Comentarios</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- d-grid activa el display grid en bootstrap -->
+            <!-- gap era en grid el espacio que hay entre filas y columnas -->
+            <!-- mx auto porque se refiere al margin en el eje x -->
+            <div class="d-flex mx-auto mt-2 mb-2">
+              <button class="btn btn-primary" type="button">Enviar</button>
+
+              <button class="btn btn-primary" role="button">
+                <a class="btn btn-primary" href="contacto.html" role="button"
+                  >Resetear</a
+                >
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Comienza el footer -->
+    <footer
+      class="text-center text-lg-start bg-footer-color text-dark footer-dark"
+    >
       <!-- Section: Social media -->
       <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-top"
       >
         <!-- Left -->
         <div class="m-auto">
           <p>Contactenos por las redes sociales:</p>
+
           <ul>
             <li>
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                class="text-secondary"
-                >Facebook</a
-              >
+              <a href="https://www.facebook.com" target="_blank"
+                ><img
+                  src="./img/facebook.png"
+                  class="logos"
+                  alt="logo facebook"
+              /></a>
             </li>
             <li>
               <a
                 href="https://www.twitter.com"
                 target="_blank"
                 class="text-secondary"
-                >Twitter</a
-              >
+                ><img src="./img/twitter.png" class="logos" alt="logo twitter"
+              /></a>
             </li>
             <li>
               <a
                 href="https://www.instagram.com"
                 target="_blank"
                 class="text-secondary"
-                >Instagram</a
-              >
+                ><img
+                  src="./img/instagram.png"
+                  class="logos"
+                  alt="logo instagram"
+              /></a>
             </li>
           </ul>
         </div>
@@ -214,7 +328,7 @@
                 <i class="fas fa-gem me-3"></i>Gisenic
               </h5>
               <p>
-                <img src="./img/logo-png.png" alt="" />
+                <img src="./img/logo-png.png" alt="logo empresa" />
               </p>
             </div>
 
@@ -243,7 +357,10 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-              <p><i class="fas fa-home me-3"></i> Av. la plata 1768, Boedo</p>
+              <p>
+                <i class="fas fa-home me-3"></i> Av. Córdoba 6193. 1° A, C1427,
+                CABA, Buenos Aires
+              </p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
                 info@gisenic.com
@@ -257,7 +374,7 @@
       </section>
       <!-- Section: Links  -->
     </footer>
-    <!-- Footer -->
+    <!-- Termina el footer -->
 
     <!-- JavaScript Bundle with Popper -->
     <script

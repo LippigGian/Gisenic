@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gisenic</title>
+    <title>
+      Gisenic - Consultora de seguridad e higiene, medio ambiente y seguridad
+    </title>
+    <meta
+      name="keywords"
+      content="seguridad e higiene, seguridad integral, medio ambiente, consultora, acciente laboral, ART, SRT"
+    />
+    <meta
+      name="description"
+      content="Gisenic es una empresa fundada hace más de 30 años, expertos en riesgos laborales y medioambiente. Asesoria legal interna o externa, soluciones integrales"
+    />
     <link rel="icon" href="./img/favicon.png" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
@@ -15,45 +25,67 @@
 
   <body>
     <!-- comienza el header -->
-    <header id="headerMain" class="main__header">
-      <!-- Comienza el nav -->
-      <div class="logo">
-        <a href="./index.html"
-          ><img src="./img/logo-png.png" alt="Logo Gisenic"
-        /></a>
-        <h2 class="nombreEmpresa">Gisenic</h2>
-      </div>
-      <!-- el logo va dentro del header pero no dentro del nav  -->
-      <nav>
-        <ul>
-          <li>
-            <a href="./nosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="./contacto.html">Contacto</a>
-          </li>
-          <li class="item">
-            <a href="./servicios.html">Servicios</a>
-            <ul>
-              <!-- menu con submenu que se despliega. Es decir, esta anidada-->
-              <li>Empresas</li>
-              <li>Industria</li>
-              <li>Habilitaciones</li>
-              <li>Capacitaciones</li>
-              <li>Comercio</li>
-              <li>Pyme</li>
-            </ul>
-            <!--Termina el submenu-->
-          </li>
-          <li>
-            <a href="./presupuesto.html">Presupuesto online</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Finaliza el nav  -->
-    </header>
-    <!-- finaliza el header -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-nav-color navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="./img/logo-png.png" alt="logo empresa" width="45px"
+          /></a>
+          <a class="navbar-brand" href="index.html">Gisenic</a>
+          <!-- expand-lg que se expanda con la resolucion log
+      navbar-dark el color, proximamente se lo cambiare creando una variable
+      bg-primary el color del bg del nav
+      static-top que quede fijo en top -->
 
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="faq.html"
+                  >Faq</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Finaliza el header -->
     <!-- Comienza el main -->
     <main class="main__principal">
       <section class="main__principal--section">
@@ -129,40 +161,147 @@
         </div>
       </section>
       <section class="main__terciario">
-        <div class="main__terciario">
-          <img src="./img/barra-index.png" alt="banner empresa" />
+        <div class="main__terciario__img">
+          <img
+            src="img/calendario.png"
+            class="main__terciario__img--1"
+            alt="Calendario icono"
+          />
+
+          <img
+            src="img/medalla.png"
+            class="main__terciario__img--2"
+            alt="Medalla icono"
+          />
+
+          <img
+            src="img/grafico-de-barras.png"
+            class="main__terciario__img--3"
+            alt="Grafico de barras icono"
+          />
+        </div>
+        <div class="main__terciario__text">
+          <p>30 años de experiencia</p>
+          <p>350 empresas satisfechas</p>
+          <p>3000 trabajos por año</p>
         </div>
       </section>
     </main>
     <!-- Finaliza el main -->
-    <!--Comienza footer-->
-    <footer class="main__footer">
-      <img src="./img/logo-png.png" alt="Logo Gisenic" />
-      <div>
-        <p>Datos de contacto</p>
-        <p>Telefono: 15-3212-3212</p>
-        <p>Redes sociales:</p>
-      </div>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com" target="_blank">Twitter</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </li>
-      </ul>
+    <!-- Comienza el footer -->
+    <footer
+      class="text-center text-lg-start bg-footer-color text-dark footer-dark"
+    >
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-top"
+      >
+        <!-- Left -->
+        <div class="m-auto">
+          <p>Contactenos por las redes sociales:</p>
+
+          <ul>
+            <li>
+              <a href="https://www.facebook.com" target="_blank"
+                ><img
+                  src="./img/facebook.png"
+                  class="logos"
+                  alt="logo facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="text-secondary"
+                ><img src="./img/twitter.png" class="logos" alt="logo twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="text-secondary"
+                ><img
+                  src="./img/instagram.png"
+                  class="logos"
+                  alt="logo instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h5 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Gisenic
+              </h5>
+              <p>
+                <img src="./img/logo-png.png" alt="logo empresa" />
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
+              <p>
+                <a href="./nosotros.html" class="text-reset">Nosotros</a>
+              </p>
+              <p>
+                <a href="./contacto.html" class="text-reset">Contactos</a>
+              </p>
+              <p>
+                <a href="./servicios.html" class="text-reset">Servicios</a>
+              </p>
+              <p>
+                <a href="./presupuesto.html" class="text-reset"
+                  >Presupuesto online</a
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+              <p>
+                <i class="fas fa-home me-3"></i> Av. Córdoba 6193. 1° A, C1427,
+                CABA, Buenos Aires
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@gisenic.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> 11-3212-3212</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
     </footer>
-    <!--Termina footer-->
+    <!-- Termina el footer -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
 
-<!--/*Apretar ! para autocompletar el doctype
-click derecho. Dar formato al documento y selecciona prettier
-
+<!-- 
 <hr> salto de linea con barra
-<br> salto de linea
-
-div*2 y abre 2 divs -->
+<br> salto de linea -->
