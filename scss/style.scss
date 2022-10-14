@@ -16,8 +16,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 $azul: #1d67b2;
-$gris: #34373A;
 
+
+$gris: #e4f6f5;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,

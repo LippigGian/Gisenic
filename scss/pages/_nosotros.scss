@@ -1,6 +1,6 @@
 /* MAIN NOSOTROS */
 .main__nosotros {
-  background-color: white;
+
   color: black;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ display: none;
 
 .main__nosotros__secundario--text {
   margin: 0;
-  background-color: beige;
+  background-color: #fff;
   border-radius: 50px;
   box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
   padding: 15px;
@@ -70,7 +70,7 @@ margin: auto auto 40px auto;
 
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: beige;
+  background-color: #fff;
   border-radius: 50px;
   padding: 15px;
   box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
@@ -83,7 +83,7 @@ margin: auto auto 40px auto;
 .main__nosotros__cuarto--estadisticas {
 
   margin: 40px auto;
-  background-color: beige;
+  background-color: #fff;
   border-radius: 50px;
   padding: 15px;
   box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
@@ -176,7 +176,7 @@ display: none;
     gap: 25px;
     margin: 40px;
   }
-  /*FLIP CARDS SACADAS DE INTERNET*/
+  /*FLIP CARDS */
   .tarjeta {
     position: relative;
     width: 300px;
