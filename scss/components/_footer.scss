@@ -1,49 +1,14 @@
-// footer {
-
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   /*para centrar la imagen*/
-//   text-align: center;
-//   position: relative;
-//   bottom: 0px;
-//   /*bottom 0; para darle la posicion al margen inferior, pero pierde medidas*/
-// //   background-color: #34373a;
-// //   width: 100%;
-// //   padding: 5px;
-// // 
-// }
-
-// footer a {
-//   color: white;
-//   text-decoration: none;
-//   /*text-decoration: para quitar el subrayado del hipervinculo*/
-// }
-
-// .main__footer ul {
-//   list-style: none;
-//   /*list-style none para quitar el punto de las listas*/
-// }
-
-// .main__footer ul li {
-//   padding: 5px;
-//   /*para que se vea horizontal*/
-// }
-
 footer img {
   width: 50px;
- height: 38px;
+  height: 38px;
 }
-ul
-{
+ul {
   list-style: none;
 }
-.logos
-{
- margin: 15px;
+.logos {
+  margin: 15px;
   width: 50px;
   height: 50px;
-
 }
 
 @media screen and (min-width: 1024px) {
