@@ -8766,7 +8766,7 @@ textarea.form-control-lg {
   background-color: #424141; }
 
 .main__terciario {
-  background-image: url("../../img/analisis.jpg");
+  background-image: url("../img/analisis.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
@@ -8820,7 +8820,7 @@ textarea.form-control-lg {
 
 .main__sexto {
   width: 100%;
-  background-image: url("../../img/teclado.jpg");
+  background-image: url("../img/teclado.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -8935,7 +8935,7 @@ textarea.form-control-lg {
   margin: 0; }
 
 .main__principal__contacto--bg {
-  background-image: url("../../img/contact-us.jpg");
+  background-image: url("../img/contact-us.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
@@ -9022,7 +9022,7 @@ textarea.form-control-lg {
   margin: auto; }
 
 .main__nosotros__primario--parrafo--bg {
-  background-image: url("../../img/about-us.jpg");
+  background-image: url("../img/about-us.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
@@ -9208,7 +9208,7 @@ textarea.form-control-lg {
     padding: 15px; } }
 
 .main__principal__faq {
-  background-image: url("../../img/faqbg.jpg");
+  background-image: url("../img/faqbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
@@ -9327,7 +9327,7 @@ textarea.form-control-lg {
     grid-area: cc; } }
 
 .main__servicios__primario--bg {
-  background-image: url("../../img/servicios.jpg");
+  background-image: url("../img/servicios.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
@@ -9398,7 +9398,7 @@ button {
 
 @media screen and (min-width: 1024px) {
   .main__servicios__primario--bg {
-    background-image: url(../../img/servicios.jpg);
+    background-image: url("../img/servicios.jpg");
     height: 100vh;
     margin-bottom: 40px; }
     .main__servicios__primario--bg h1, .main__servicios__primario--bg .h1 {
