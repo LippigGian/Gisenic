@@ -16,6 +16,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 $azul: #1d67b2;
 
 $gris: #e4f6f5;
+$footer: #34373A;
+$enviar: #248931;
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
@@ -26,7 +28,9 @@ $theme-colors: (
   "light": $light,
   "dark": $dark,
   "nav-color": $azul,
-  "footer-color": $gris,
+  "footer-color": $footer,
+  "enviar": $enviar,
+  "azul": $azul,
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";

@@ -6,6 +6,7 @@
   height: 100vw * 60 /100;
   display: flex;
   justify-content: center;
+  background-attachment: fixed;
 
   & h1 {
     margin-top: 15px;
@@ -16,6 +17,11 @@
 .main__principal__faq h1 {
   font-size: 35px;
 }
+.azul
+{
+  color: #1D67B2;
+}
+
 // COMIENZA SECTION 1
 .main__principal__faq--section1 {
   width: 90%;

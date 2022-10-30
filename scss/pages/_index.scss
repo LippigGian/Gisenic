@@ -1,23 +1,78 @@
+.slider
+{
+  width: 75vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+.slider .slider-track
+{
+  display: flex;
+  animation: scroll 40s linear infinite;
+  /*webkit animation por si algun navegador no soporta html5 o css3*/
+  -webkit-animation: scroll 40s linear infinite;
+  /*calc 270 porque es el ancho de nuestras imagenes y 20 porque es el doble de imagenes que vamos a utilizar*/
+  width: calc(270px * 20);
+}
+.slider .slide
+{
+  width: 270px;
+
+}
+@keyframes scroll {
+  0%
+  {
+    transform:  translateX(0);
+    -webkit-transform: translateX(0);
+  }
+
+  100%
+  {
+    transform:  translateX(calc(-200px *10));
+    -webkit-transform: translateX(calc(-200px *10));
+  }
+  
+}
+
+.slider .slide .img {
+  width: 100%;
+}
+.main__nosotros--linea
+{
+border-bottom: solid 1px grey;
+width: 50%;
+margin: auto;
+}
 .main__principal {
-  background-color: #FFFF;
   color: rgb(0, 0, 0);
   padding-top: 50px;
+ 
 }
 
 .main__principal--section {
   display: flex;
   flex-direction: column;
-  margin: 0 20px 15px;
+  margin: 0 100px 40px 100px;
   text-align: center;
-}
+
+  & h1{
+    color: #1D67B2;
+    border: solid;
+    padding: 15px;
+    width: 60%;
+    margin: auto auto 40px auto;
+    font-size: 70px;
+  
+  }
+  }
 
 .main__principal--img {
-  animation-name: movimiento;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  /*para que la velocidad de la animacion sea lineal*/
-  animation-timing-function: linear;
-  /*linear*/
+//   animation-name: movimiento;
+//   animation-duration: 3s;
+//   animation-iteration-count: infinite;
+//   /*para que la velocidad de la animacion sea lineal*/
+//   animation-timing-function: linear;
+//   /*linear*/
 }
 
 .main__principal--img img {
@@ -26,9 +81,6 @@
   width: 95%;
 }
 
-hr {
-  margin: 30px 80px 30px 80px;
-}
 
 .main__secundario {
   display: flex;
@@ -68,10 +120,17 @@ hr {
 {
   background-color: rgb(66, 65, 65);
 }
-
+.main__terciario
+{
+  background-image: url("/img/analisis.jpg");
+  background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ 
+}
 .main__terciario__img{
   padding: 10px;
-  background-color: #1D67B2;
+  background-color: rgba($color: #1D67B2, $alpha: 0.8);
   display: flex;
   justify-content: space-evenly;
 
@@ -80,17 +139,60 @@ hr {
 {
   @extend .main__terciario__img;
  color: #FFFF;
+ & p{
+  font-size: 30px;
+ }
+ 
  /*agregar borde redondeado*/
 }
 
 /*for de 1 a 3 (con el 3 incluido, por eso es through, sino podria ser to) para darle estilos a las 3 imagenes del banner*/
 @for $i from 1 through 3 {
   .main__terciario__img--#{$i}
-  { width: 100px;
-    height: 100px;}
+  { width: 200px;
+    height: 200px;}
 }
 
-
+.main__cuarto{
+  text-align: center;
+}
+.main__cuarto--text
+{
+  margin-bottom: 40px;
+}
+.main__cuarto--slider
+{
+  margin-bottom: 40px;
+}
+.main__quinto
+{
+  display: flex;
+  justify-content: center;
+  margin: 0 100px;
+}
+.main__quinto__col
+{
+width: 33%;
+display: flex;
+flex-direction: column;
+margin: 50px;
+& h4{
+  padding: 15px 0;
+}
+}
+.main__sexto
+{
+  width: 100%;
+  background-image: url(/img/teclado.jpg);
+  background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+margin-bottom: 40px;
+}
+.main__sexto--fondo
+{
+  background-color: rgba($color: #1D67B2, $alpha: 0.8);
+}
 @media screen and (min-width: 768px) {
   /* AQUI COMIENZA EL MAIN PRINCIPAL */
   .main__principal--contenido {
@@ -99,6 +201,9 @@ hr {
   }
   .main__principal--img img {
     padding-top: 25px;
+  }
+  .main__secundario{
+    margin: 10px 100px;
   }
   .main__secundario--titulo {
     display: flex;
@@ -153,13 +258,14 @@ hr {
   .main__principal--section {
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
   .main__principal--contenido {
     text-align: center;
     justify-content: space-between;
     margin-left: 50px;
     font-size: 25px;
-    width: 50%;
+    width: 45%;
   }
 
   .main__secundario--titulo {
@@ -224,8 +330,23 @@ hr {
 // }
 .main__terciario
 {
-  width: 90%;
-  margin: auto;
+  
+  margin: auto auto 40px auto;
  
+}
+.main__septimo
+{
+  text-align: center;
+  width: 50%;
+  margin: auto auto 40px auto;
+  & p {
+    font-size: 40px;
+   
+    & span{
+      color: #1D67B2;
+      border: solid ;
+      padding: 5px;
+    }
+  }
 }
 }
