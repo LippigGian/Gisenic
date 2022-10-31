@@ -8679,10 +8679,108 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.slider {
+.main__principal {
+  color: black;
+  padding-top: 50px; }
+
+.main__principal--section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px;
+  text-align: center; }
+  .main__principal--section h1, .main__principal--section .h1 {
+    color: #1d67b2;
+    border: solid;
+    padding: 15px;
+    width: 85%;
+    margin: 0 auto 30px auto;
+    font-size: 40px; }
+
+.main__principal--img img {
+  border-radius: 15px;
+  padding-top: 30px;
+  width: 95%;
+  margin-bottom: 30px; }
+
+.main__secundario {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  padding: 20px; }
+
+.main__secundario--titulo {
+  text-align: center;
+  padding-bottom: 35px; }
+  .main__secundario--titulo h2, .main__secundario--titulo .h2 {
+    font-size: 35px; }
+
+.main__secundario--cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px; }
+  .main__secundario--cards .bold {
+    padding: 15px;
+    font-weight: bold; }
+
+.main__secundario--button {
+  text-align: center; }
+
+.main__secundario--button a button {
+  font-size: 25px;
+  padding: 10px;
+  background-color: #1d67b2;
+  border-radius: 10%;
+  color: #ffff;
+  box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2); }
+
+.main__secundario--button a button:hover {
+  background-color: #424141; }
+
+.main__terciario {
+  background-image: url("../img/analisis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto auto 40px auto; }
+
+.main__terciario__img, .main__terciario__text {
+  padding: 10px;
+  background-color: rgba(29, 103, 178, 0.8);
+  display: flex;
+  justify-content: space-evenly; }
+
+.main__terciario__text {
+  color: #ffff;
+  /*agregar borde redondeado*/ }
+  .main__terciario__text p {
+    font-size: 15px; }
+
+/*for de 1 a 3 (con el 3 incluido, por eso es through, sino podria ser to) para darle estilos a las 3 imagenes del banner*/
+.main__terciario__img--1 {
+  width: 100px;
+  height: 100px; }
+
+.main__terciario__img--2 {
+  width: 100px;
+  height: 100px; }
+
+.main__terciario__img--3 {
+  width: 100px;
+  height: 100px; }
+
+.main__cuarto {
+  text-align: center; }
+
+.main__cuarto--text {
+  margin-bottom: 40px; }
+
+/*todos los slider corresponden al main cuarto*/
+.main__cuarto--slider {
   width: 75vw;
   height: auto;
-  margin: auto;
+  margin: auto auto 40px auto;
   overflow: hidden; }
 
 .slider .slider-track {
@@ -8701,122 +8799,24 @@ textarea.form-control-lg {
     transform: translateX(0);
     -webkit-transform: translateX(0); }
   100% {
-    transform: translateX(calc(-200px *10));
-    -webkit-transform: translateX(calc(-200px *10)); } }
+    transform: translateX(calc(-200px * 10));
+    -webkit-transform: translateX(calc(-200px * 10)); } }
 
 .slider .slide .img {
   width: 100%; }
 
-.main__nosotros--linea {
-  border-bottom: solid 1px grey;
-  width: 50%;
-  margin: auto; }
-
-.main__principal {
-  color: black;
-  padding-top: 50px; }
-
-.main__principal--section {
-  display: flex;
-  flex-direction: column;
-  margin: 0 100px 40px 100px;
-  text-align: center; }
-  .main__principal--section h1, .main__principal--section .h1 {
-    color: #1D67B2;
-    border: solid;
-    padding: 15px;
-    width: 60%;
-    margin: auto auto 40px auto;
-    font-size: 70px; }
-
-.main__principal--img img {
-  border-radius: 15px;
-  padding-top: 30px;
-  width: 95%; }
-
-.main__secundario {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  padding: 20px; }
-
-.main__secundario--titulo {
-  text-align: center;
-  padding-bottom: 35px; }
-
-.main__secundario--cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 30px; }
-
-.main__secundario--button {
-  text-align: center; }
-
-.main__secundario--button a button {
-  font-size: 25px;
-  padding: 10px;
-  background-color: #1D67B2;
-  border-radius: 10%;
-  color: #FFFF;
-  box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2); }
-
-.main__secundario--button a button:hover {
-  background-color: #424141; }
-
-.main__terciario {
-  background-image: url("../img/analisis.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-
-.main__terciario__img, .main__terciario__text {
-  padding: 10px;
-  background-color: rgba(29, 103, 178, 0.8);
-  display: flex;
-  justify-content: space-evenly; }
-
-.main__terciario__text {
-  color: #FFFF;
-  /*agregar borde redondeado*/ }
-  .main__terciario__text p {
-    font-size: 30px; }
-
-/*for de 1 a 3 (con el 3 incluido, por eso es through, sino podria ser to) para darle estilos a las 3 imagenes del banner*/
-.main__terciario__img--1 {
-  width: 200px;
-  height: 200px; }
-
-.main__terciario__img--2 {
-  width: 200px;
-  height: 200px; }
-
-.main__terciario__img--3 {
-  width: 200px;
-  height: 200px; }
-
-.main__cuarto {
-  text-align: center; }
-
-.main__cuarto--text {
-  margin-bottom: 40px; }
-
-.main__cuarto--slider {
-  margin-bottom: 40px; }
-
 .main__quinto {
   display: flex;
-  justify-content: center;
-  margin: 0 100px; }
+  flex-direction: column;
+  margin: 15px 15px; }
 
 .main__quinto__col {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  margin: 50px; }
+  margin: 15px 0; }
   .main__quinto__col h4, .main__quinto__col .h4 {
     padding: 15px 0; }
+
+.main__quinto__col img {
+  width: 100%; }
 
 .main__sexto {
   width: 100%;
@@ -8829,6 +8829,17 @@ textarea.form-control-lg {
 .main__sexto--fondo {
   background-color: rgba(29, 103, 178, 0.8); }
 
+.main__septimo {
+  text-align: center;
+  margin: 15px; }
+  .main__septimo p {
+    font-size: 25px;
+    margin: 15px 0; }
+    .main__septimo p span {
+      color: #1d67b2;
+      border: solid;
+      padding: 5px; }
+
 @media screen and (min-width: 768px) {
   /* AQUI COMIENZA EL MAIN PRINCIPAL */
   .main__principal--contenido {
@@ -8838,11 +8849,6 @@ textarea.form-control-lg {
     padding-top: 25px; }
   .main__secundario {
     margin: 10px 100px; }
-  .main__secundario--titulo {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-self: center; }
   .main__secundario {
     display: grid;
     justify-items: center;
@@ -8862,29 +8868,51 @@ textarea.form-control-lg {
     grid-area: button; }
   .main__secundario--cards {
     width: 75%;
-    /* border: 4px solid black; */
     margin: 30px; }
   .main__secundario--button {
     padding: 50px; }
   .main__secundario--button a button {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .main__terciario .main__terciario__img--1 {
+    width: 200px;
+    height: 200px; }
+  .main__terciario .main__terciario__img--2 {
+    width: 200px;
+    height: 200px; }
+  .main__terciario .main__terciario__img--3 {
+    width: 200px;
+    height: 200px; }
+  .main__terciario__text p {
+    font-size: 25px; }
+  .main__septimo {
+    text-align: center;
+    width: 50%;
+    margin: auto auto 40px auto; }
+    .main__septimo p {
+      font-size: 40px; }
+      .main__septimo p span {
+        color: #1d67b2;
+        border: solid;
+        padding: 5px; } }
 
 @media screen and (min-width: 1024px) {
   /* AQUI COMIENZA EL MAIN PRINCIPAL */
   .main__principal--section {
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    margin: 0 100px 40px 100px; }
+    .main__principal--section h1, .main__principal--section .h1 {
+      font-size: 70px;
+      width: 60%;
+      margin: auto auto 40px auto; }
   .main__principal--contenido {
     text-align: center;
     justify-content: space-between;
     margin-left: 50px;
-    font-size: 25px;
     width: 45%; }
   .main__secundario--titulo {
     grid-area: titulo; }
-  .main__secundario--button {
-    padding: 50px; }
   .main__secundario--button a button {
     font-size: 40px; }
   @keyframes movimiento {
@@ -8918,18 +8946,18 @@ textarea.form-control-lg {
   .main__secundario--cards:hover.card4 {
     transform: translate(-160px, -75px) scale(1.15);
     background-color: #e4eaf0; }
-  .main__terciario {
-    margin: auto auto 40px auto; }
-  .main__septimo {
-    text-align: center;
-    width: 50%;
-    margin: auto auto 40px auto; }
-    .main__septimo p {
-      font-size: 40px; }
-      .main__septimo p span {
-        color: #1D67B2;
-        border: solid;
-        padding: 5px; } }
+  .main__quinto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 100px; }
+  .main__quinto__col {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px; }
+    .main__quinto__col h4, .main__quinto__col .h4 {
+      padding: 15px 0; } }
 
 .main__principal__contacto {
   margin: 0; }
@@ -9005,11 +9033,6 @@ textarea.form-control-lg {
     width: 50%; } }
 
 /* MAIN NOSOTROS */
-.main__nosotros--linea {
-  border-bottom: solid 1px grey;
-  width: 50%;
-  margin: auto; }
-
 .main__nosotros {
   color: black;
   display: flex;
@@ -9029,7 +9052,7 @@ textarea.form-control-lg {
   height: 60vw;
   display: flex;
   justify-content: center;
-  background-attachment: fixed; }
+  margin-bottom: 40px; }
   .main__nosotros__primario--parrafo--bg h1, .main__nosotros__primario--parrafo--bg .h1 {
     margin-top: 15px;
     font-size: 35px; }
@@ -9038,7 +9061,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 40px auto; }
+  margin: auto; }
 
 .main__nosotros__secundario--img {
   display: none; }
@@ -9111,19 +9134,17 @@ textarea.form-control-lg {
   /* MAIN NOSOTROS */
   .main__nosotros__primario--parrafo--bg {
     height: 100vh;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    background-attachment: fixed; }
     .main__nosotros__primario--parrafo--bg h1, .main__nosotros__primario--parrafo--bg .h1 {
       margin-top: 150px;
       font-size: 99px; }
   .main__nosotros--img img {
     width: 40vw; }
   .main__nosotros__secundario {
-    display: flex;
     flex-direction: row;
     gap: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 40px;
+    margin: auto 100px 40px 100px;
     justify-content: center;
     width: auto; }
   .main__nosotros__secundario--img {

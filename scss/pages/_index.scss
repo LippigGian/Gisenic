@@ -1,97 +1,42 @@
-.slider
-{
-  width: 75vw;
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-}
-.slider .slider-track
-{
-  display: flex;
-  animation: scroll 40s linear infinite;
-  /*webkit animation por si algun navegador no soporta html5 o css3*/
-  -webkit-animation: scroll 40s linear infinite;
-  /*calc 270 porque es el ancho de nuestras imagenes y 20 porque es el doble de imagenes que vamos a utilizar*/
-  width: calc(270px * 20);
-}
-.slider .slide
-{
-  width: 270px;
-
-}
-@keyframes scroll {
-  0%
-  {
-    transform:  translateX(0);
-    -webkit-transform: translateX(0);
-  }
-
-  100%
-  {
-    transform:  translateX(calc(-200px *10));
-    -webkit-transform: translateX(calc(-200px *10));
-  }
-  
-}
-
-.slider .slide .img {
-  width: 100%;
-}
-.main__nosotros--linea
-{
-border-bottom: solid 1px grey;
-width: 50%;
-margin: auto;
-}
 .main__principal {
   color: rgb(0, 0, 0);
   padding-top: 50px;
- 
 }
-
 .main__principal--section {
   display: flex;
   flex-direction: column;
-  margin: 0 100px 40px 100px;
+  margin: 10px 15px;
   text-align: center;
 
-  & h1{
-    color: #1D67B2;
+  & h1 {
+    color: #1d67b2;
     border: solid;
     padding: 15px;
-    width: 60%;
-    margin: auto auto 40px auto;
-    font-size: 70px;
-  
+    width: 85%;
+    margin: 0 auto 30px auto;
+    font-size: 40px;
   }
-  }
-
-.main__principal--img {
-//   animation-name: movimiento;
-//   animation-duration: 3s;
-//   animation-iteration-count: infinite;
-//   /*para que la velocidad de la animacion sea lineal*/
-//   animation-timing-function: linear;
-//   /*linear*/
 }
-
 .main__principal--img img {
   border-radius: 15px;
   padding-top: 30px;
   width: 95%;
+  margin-bottom: 30px;
 }
-
 
 .main__secundario {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 15px;
   padding: 20px;
 }
 
 .main__secundario--titulo {
   text-align: center;
   padding-bottom: 35px;
+  & h2 {
+    font-size: 35px;
+  }
 }
 
 .main__secundario--cards {
@@ -100,98 +45,136 @@ margin: auto;
   align-items: center;
   text-align: center;
   padding: 30px;
+  & .bold {
+    padding: 15px;
+    font-weight: bold;
+  }
 }
 
 .main__secundario--button {
   text-align: center;
-
 }
 
 .main__secundario--button a button {
   font-size: 25px;
   padding: 10px;
-  background-color: #1D67B2;
+  background-color: #1d67b2;
   border-radius: 10%;
-  color: #FFFF;
+  color: #ffff;
   box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
-
 }
-.main__secundario--button a button:hover
-{
+.main__secundario--button a button:hover {
   background-color: rgb(66, 65, 65);
 }
-.main__terciario
-{
+.main__terciario {
   background-image: url("../img/analisis.jpg");
   background-repeat: no-repeat;
- background-size: cover;
- background-attachment: fixed;
- 
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto auto 40px auto;
 }
-.main__terciario__img{
+.main__terciario__img {
   padding: 10px;
-  background-color: rgba($color: #1D67B2, $alpha: 0.8);
+  background-color: rgba($color: #1d67b2, $alpha: 0.8);
   display: flex;
   justify-content: space-evenly;
-
 }
-.main__terciario__text
-{
+.main__terciario__text {
   @extend .main__terciario__img;
- color: #FFFF;
- & p{
-  font-size: 30px;
- }
- 
- /*agregar borde redondeado*/
+  color: #ffff;
+  & p {
+    font-size: 15px;
+  }
+
+  /*agregar borde redondeado*/
 }
 
 /*for de 1 a 3 (con el 3 incluido, por eso es through, sino podria ser to) para darle estilos a las 3 imagenes del banner*/
 @for $i from 1 through 3 {
-  .main__terciario__img--#{$i}
-  { width: 200px;
-    height: 200px;}
+  .main__terciario__img--#{$i} {
+    width: 100px;
+    height: 100px;
+  }
 }
 
-.main__cuarto{
+.main__cuarto {
   text-align: center;
 }
-.main__cuarto--text
-{
+.main__cuarto--text {
   margin-bottom: 40px;
 }
-.main__cuarto--slider
-{
-  margin-bottom: 40px;
+/*todos los slider corresponden al main cuarto*/
+.main__cuarto--slider {
+  width: 75vw;
+  height: auto;
+  margin: auto auto 40px auto;
+  overflow: hidden;
 }
-.main__quinto
-{
+
+.slider .slider-track {
   display: flex;
-  justify-content: center;
-  margin: 0 100px;
+  animation: scroll 40s linear infinite;
+  /*webkit animation por si algun navegador no soporta html5 o css3*/
+  -webkit-animation: scroll 40s linear infinite;
+  /*calc 270 porque es el ancho de nuestras imagenes y 20 porque es el doble de imagenes que vamos a utilizar*/
+  width: calc(270px * 20);
 }
-.main__quinto__col
-{
-width: 33%;
-display: flex;
-flex-direction: column;
-margin: 50px;
-& h4{
-  padding: 15px 0;
+.slider .slide {
+  width: 270px;
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-200px * 10));
+    -webkit-transform: translateX(calc(-200px * 10));
+  }
 }
-.main__sexto
-{
+.slider .slide .img {
+  width: 100%;
+}
+.main__quinto {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 15px;
+}
+.main__quinto__col {
+  margin: 15px 0;
+  & h4 {
+    padding: 15px 0;
+  }
+}
+.main__quinto__col img {
+  width: 100%;
+}
+.main__sexto {
   width: 100%;
   background-image: url("../img/teclado.jpg");
   background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-margin-bottom: 40px;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 40px;
 }
-.main__sexto--fondo
-{
-  background-color: rgba($color: #1D67B2, $alpha: 0.8);
+.main__sexto--fondo {
+  background-color: rgba($color: #1d67b2, $alpha: 0.8);
+}
+.main__septimo {
+  text-align: center;
+
+  margin: 15px;
+  & p {
+    font-size: 25px;
+    margin: 15px 0;
+
+    & span {
+      color: #1d67b2;
+      border: solid;
+      padding: 5px;
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   /* AQUI COMIENZA EL MAIN PRINCIPAL */
@@ -202,15 +185,10 @@ margin-bottom: 40px;
   .main__principal--img img {
     padding-top: 25px;
   }
-  .main__secundario{
+  .main__secundario {
     margin: 10px 100px;
   }
-  .main__secundario--titulo {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-self: center;
-  }
+
   .main__secundario {
     display: grid;
     justify-items: center;
@@ -241,7 +219,6 @@ margin-bottom: 40px;
   }
   .main__secundario--cards {
     width: 75%;
-    /* border: 4px solid black; */
     margin: 30px;
   }
   .main__secundario--button {
@@ -250,7 +227,31 @@ margin-bottom: 40px;
   .main__secundario--button a button {
     font-size: 30px;
   }
+  .main__terciario {
+    @for $i from 1 through 3 {
+      .main__terciario__img--#{$i} {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+  .main__terciario__text p {
+    font-size: 25px;
+  }
+  .main__septimo {
+    text-align: center;
+    width: 50%;
+    margin: auto auto 40px auto;
+    & p {
+      font-size: 40px;
 
+      & span {
+        color: #1d67b2;
+        border: solid;
+        padding: 5px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -259,27 +260,29 @@ margin-bottom: 40px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 0 100px 40px 100px;
+    & h1 {
+      font-size: 70px;
+      width: 60%;
+      margin: auto auto 40px auto;
+    }
   }
+
   .main__principal--contenido {
     text-align: center;
     justify-content: space-between;
     margin-left: 50px;
-    font-size: 25px;
     width: 45%;
   }
 
   .main__secundario--titulo {
     grid-area: titulo;
-    // width: 100vw;
   }
 
-  .main__secundario--button {
-    padding: 50px;
-  }
   .main__secundario--button a button {
     font-size: 40px;
   }
- 
+
   @keyframes movimiento {
     0%,
     100% {
@@ -322,31 +325,20 @@ margin-bottom: 40px;
     transform: translate(-160px, -75px) scale(1.15);
     background-color: #e4eaf0;
   }
-// .main__terciario__img
-// {
 
-// border-top-left-radius: 15px;
-// border-top-right-radius: 15px;
-// }
-.main__terciario
-{
-  
-  margin: auto auto 40px auto;
- 
-}
-.main__septimo
-{
-  text-align: center;
-  width: 50%;
-  margin: auto auto 40px auto;
-  & p {
-    font-size: 40px;
-   
-    & span{
-      color: #1D67B2;
-      border: solid ;
-      padding: 5px;
+  .main__quinto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 100px;
+  }
+  .main__quinto__col {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    & h4 {
+      padding: 15px 0;
     }
   }
-}
 }
