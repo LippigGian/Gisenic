@@ -1,3 +1,4 @@
+// COMIENZA MAIN PRINCIPAL
 .main__principal__faq {
   background-image: url("../img/faqbg.jpg");
   background-repeat: no-repeat;
@@ -6,60 +7,47 @@
   height: 100vw * 60 /100;
   display: flex;
   justify-content: center;
-  background-attachment: fixed;
-
   & h1 {
     margin-top: 15px;
     font-size: 35px;
   }
-}
+  &--section1 {
+    width: 90%;
+    margin: 25px auto;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
+    & img {
+      display: none;
+    }
+    &--text {
+      margin: 0px 15px;
+      text-align: center;
+      padding: 5px;
 
-.main__principal__faq h1 {
-  font-size: 35px;
-}
-.azul
-{
-  color: #1D67B2;
-}
-
-// COMIENZA SECTION 1
-.main__principal__faq--section1 {
-  width: 90%;
-  margin: 25px auto;
-  background-color: #fff;
-  border-radius: 50px;
-  box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
-  & img {
-    display: none;
+      & h2 {
+        margin: 25px;
+      }
+    }
   }
-}
-.main__principal__faq--section1--text {
-  margin: 0px 15px;
-  text-align: center;
-  padding: 5px;
+  &--section2 {
+    width: 90%;
+    margin: 25px auto;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
+    & img {
+      display: none;
+    }
+    &--text {
+      margin: 0px 15px;
+      padding: 5px;
 
-  & h2 {
-    margin: 25px;
-  }
-}
-// COMIENZA SECTION2
-.main__principal__faq--section2 {
-  width: 90%;
-  margin: 25px auto;
-  background-color: #fff;
-  border-radius: 50px;
-  box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
-  & img {
-    display: none;
-  }
-}
-.main__principal__faq--section2--text {
-  margin: 0px 15px;
-  padding: 5px;
-
-  & h2 {
-    text-align: center;
-    margin: 25px;
+      & h2 {
+        text-align: center;
+        margin: 25px;
+      }
+    }
   }
 }
 
@@ -73,71 +61,62 @@
   border-radius: 50px;
   box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
   padding: 15px;
-}
-.main__secundario__faq--text {
-  text-align: center;
+  &--text {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  // COMIENZA MAIN PRINCIPAL
   .main__principal__faq {
     height: 100vh;
-  }
-
-  .main__principal__faq h1 {
-    margin-top: 150px;
-    font-size: 99px;
-  }
-  // COMIENZA SECTION 1
-  .main__principal__faq--section1 {
-    display: flex;
-    width: 65%;
-    margin: 50px auto;
-
-    justify-content: space-between;
-
-    & img {
-      border-top-right-radius: 50px;
-      border-bottom-right-radius: 50px;
-      display: block;
+    background-attachment: fixed;
+    & h1 {
+      margin-top: 150px;
+      font-size: 99px;
     }
-  }
-  .main__principal__faq--section1--text {
-    margin: 25px;
-
-    & p {
-      margin-top: 50px;
+    &--section1 {
+      display: flex;
+      width: 65%;
+      margin: 50px auto;
+      justify-content: space-between;
+      & img {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        display: block;
+        // flex-basis es en este caso para darle el ancho de las columnas flex
+        flex-basis: 40%;
+        display: flex;
+        justify-content: end;
+      }
+      &--text {
+        margin: 25px;
+        & p {
+          margin-top: 50px;
+        }
+      }
     }
-  }
-  .main__principal__faq--section1--img {
-    // flex-basis es en este caso para darle el ancho de las columnas flex
-    flex-basis: 40%;
-    display: flex;
-    justify-content: end;
-  }
-  // COMIENZA SECTION2
-  .main__principal__faq--section2 {
-    display: flex;
-    width: 65%;
-    margin: 50px auto;
-    gap: 15px;
-    justify-content: space-between;
-
-    & img {
-      display: block;
-
-      border-top-left-radius: 50px;
-      border-bottom-left-radius: 50px;
-    }
-  }
-  .main__principal__faq--section2--text {
-    margin: 25px;
-    & h2 {
-      text-align: center;
-
-      margin: 25px;
-    }
-    & p {
-      margin-top: 50px;
+    &--section2 {
+      display: flex;
+      width: 65%;
+      margin: 50px auto;
+      gap: 15px;
+      justify-content: space-between;
+      & img {
+        display: block;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+      &--text {
+        margin: 25px;
+        & h2 {
+          text-align: center;
+          margin: 25px;
+        }
+        & p {
+          margin-top: 50px;
+        }
+      }
     }
   }
 
@@ -151,17 +130,19 @@
     width: 65%;
     margin: 50px auto;
     gap: 15px;
-  }
-  .main__secundario__faq--text {
-    grid-area: titulo;
-  }
-  .main__secundario__faq--grid--1 {
-    grid-area: aa;
-  }
-  .main__secundario__faq--grid--2 {
-    grid-area: bb;
-  }
-  .main__secundario__faq--grid--3 {
-    grid-area: cc;
+    &--text {
+      grid-area: titulo;
+    }
+    &--grid {
+      &--1 {
+        grid-area: aa;
+      }
+      &--2 {
+        grid-area: bb;
+      }
+      &--3 {
+        grid-area: cc;
+      }
+    }
   }
 }

@@ -1,70 +1,66 @@
 .main__principal {
   color: rgb(0, 0, 0);
   padding-top: 50px;
-}
-.main__principal--section {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 15px;
-  text-align: center;
+  &--section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;
+    text-align: center;
 
-  & h1 {
-    color: #1d67b2;
-    border: solid;
-    padding: 15px;
-    width: 85%;
-    margin: 0 auto 30px auto;
-    font-size: 40px;
+    & h1 {
+      color: #1d67b2;
+      border: solid;
+      padding: 15px;
+      width: 85%;
+      margin: 0 auto 30px auto;
+      font-size: 40px;
+    }
+  }
+  &--img img {
+    border-radius: 15px;
+    padding-top: 30px;
+    width: 95%;
+    margin-bottom: 30px;
   }
 }
-.main__principal--img img {
-  border-radius: 15px;
-  padding-top: 30px;
-  width: 95%;
-  margin-bottom: 30px;
-}
-
 .main__secundario {
   display: flex;
   flex-direction: column;
   margin: 15px;
   padding: 20px;
-}
-
-.main__secundario--titulo {
-  text-align: center;
-  padding-bottom: 35px;
-  & h2 {
-    font-size: 35px;
+  &--titulo {
+    text-align: center;
+    padding-bottom: 35px;
+    & h2 {
+      font-size: 35px;
+    }
   }
-}
-
-.main__secundario--cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 30px;
-  & .bold {
-    padding: 15px;
-    font-weight: bold;
+  &--cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    & .bold {
+      padding: 15px;
+      font-weight: bold;
+    }
   }
-}
-
-.main__secundario--button {
-  text-align: center;
-}
-
-.main__secundario--button a button {
-  font-size: 25px;
-  padding: 10px;
-  background-color: #1d67b2;
-  border-radius: 10%;
-  color: #ffff;
-  box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
-}
-.main__secundario--button a button:hover {
-  background-color: rgb(66, 65, 65);
+  &--button {
+    display: flex;
+    align-self: center;
+    & a button {
+      font-size: 25px;
+      padding: 10px;
+      background-color: #1d67b2;
+      border-radius: 10%;
+      color: #ffff;
+      box-shadow: 8px 8px 2px 1px rgba(30, 30, 32, 0.2);
+      &:hover {
+        background-color: rgb(66, 65, 65);
+      }
+    }
+  }
 }
 .main__terciario {
   background-image: url("../img/analisis.jpg");
@@ -72,23 +68,20 @@
   background-size: cover;
   background-attachment: fixed;
   margin: auto auto 40px auto;
-}
-.main__terciario__img {
-  padding: 10px;
-  background-color: rgba($color: #1d67b2, $alpha: 0.8);
-  display: flex;
-  justify-content: space-evenly;
-}
-.main__terciario__text {
-  @extend .main__terciario__img;
-  color: #ffff;
-  & p {
-    font-size: 15px;
+  &__img {
+    padding: 10px;
+    background-color: rgba($color: #1d67b2, $alpha: 0.8);
+    display: flex;
+    justify-content: space-evenly;
   }
-
-  /*agregar borde redondeado*/
+  &__text {
+    @extend .main__terciario__img;
+    color: #ffff;
+    & p {
+      font-size: 15px;
+    }
+  }
 }
-
 /*for de 1 a 3 (con el 3 incluido, por eso es through, sino podria ser to) para darle estilos a las 3 imagenes del banner*/
 @for $i from 1 through 3 {
   .main__terciario__img--#{$i} {
@@ -96,12 +89,11 @@
     height: 100px;
   }
 }
-
 .main__cuarto {
   text-align: center;
-}
-.main__cuarto--text {
-  margin-bottom: 40px;
+  &--text {
+    margin-bottom: 40px;
+  }
 }
 /*todos los slider corresponden al main cuarto*/
 .main__cuarto--slider {
@@ -121,6 +113,9 @@
 }
 .slider .slide {
   width: 270px;
+  & img {
+    width: 100%;
+  }
 }
 @keyframes scroll {
   0% {
@@ -133,22 +128,19 @@
     -webkit-transform: translateX(calc(-200px * 10));
   }
 }
-.slider .slide .img {
-  width: 100%;
-}
 .main__quinto {
   display: flex;
   flex-direction: column;
   margin: 15px 15px;
-}
-.main__quinto__col {
-  margin: 15px 0;
-  & h4 {
-    padding: 15px 0;
+  &__col {
+    margin: 15px 0;
+    & h4 {
+      padding: 15px 0;
+    }
+    & img {
+      width: 100%;
+    }
   }
-}
-.main__quinto__col img {
-  width: 100%;
 }
 .main__sexto {
   width: 100%;
@@ -157,18 +149,16 @@
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 40px;
-}
-.main__sexto--fondo {
-  background-color: rgba($color: #1d67b2, $alpha: 0.8);
+  &--fondo {
+    background-color: rgba($color: #1d67b2, $alpha: 0.8);
+  }
 }
 .main__septimo {
   text-align: center;
-
   margin: 15px;
   & p {
     font-size: 25px;
     margin: 15px 0;
-
     & span {
       color: #1d67b2;
       border: solid;
@@ -176,20 +166,22 @@
     }
   }
 }
+//TABLET
 @media screen and (min-width: 768px) {
-  /* AQUI COMIENZA EL MAIN PRINCIPAL */
-  .main__principal--contenido {
-    font-size: 22px;
-    margin-left: 15px;
-  }
-  .main__principal--img img {
-    padding-top: 25px;
-  }
-  .main__secundario {
-    margin: 10px 100px;
+  .main__principal {
+    &--contenido {
+      font-size: 22px;
+      margin-left: 15px;
+    }
+    &--img img {
+      padding-top: 25px;
+      width: 50%;
+    }
   }
 
   .main__secundario {
+    margin: 10px 0px;
+    padding: 0;
     display: grid;
     justify-items: center;
     grid-template-areas:
@@ -197,10 +189,19 @@
       "card1 card2"
       "card3 card4"
       "button button";
-    padding: 0;
-  }
-  .main__secundario--titulo {
-    grid-area: titulo;
+    &--titulo {
+      grid-area: titulo;
+    }
+    &--cards {
+      width: 75%;
+      margin: 30px;
+    }
+    &--button {
+      padding: 50px;
+      & a button {
+        font-size: 30px;
+      }
+    }
   }
   .card1 {
     grid-area: card1;
@@ -217,16 +218,6 @@
   .button {
     grid-area: button;
   }
-  .main__secundario--cards {
-    width: 75%;
-    margin: 30px;
-  }
-  .main__secundario--button {
-    padding: 50px;
-  }
-  .main__secundario--button a button {
-    font-size: 30px;
-  }
   .main__terciario {
     @for $i from 1 through 3 {
       .main__terciario__img--#{$i} {
@@ -234,9 +225,9 @@
         height: 200px;
       }
     }
-  }
-  .main__terciario__text p {
-    font-size: 25px;
+    &__text p {
+      font-size: 25px;
+    }
   }
   .main__septimo {
     text-align: center;
@@ -244,7 +235,6 @@
     margin: auto auto 40px auto;
     & p {
       font-size: 40px;
-
       & span {
         color: #1d67b2;
         border: solid;
@@ -253,92 +243,78 @@
     }
   }
 }
-
+//DESKTOP
 @media screen and (min-width: 1024px) {
-  /* AQUI COMIENZA EL MAIN PRINCIPAL */
-  .main__principal--section {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 100px 40px 100px;
-    & h1 {
-      font-size: 70px;
-      width: 60%;
-      margin: auto auto 40px auto;
+  .main__principal {
+    &--section {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 100px 40px 100px;
+      & h1 {
+        font-size: 70px;
+        width: 60%;
+        margin: auto auto 40px auto;
+      }
+    }
+    &--contenido {
+      text-align: center;
+      justify-content: space-between;
+      margin-left: 50px;
+      width: 45%;
+    }
+    &--img img {
+      width: 90%;
     }
   }
-
-  .main__principal--contenido {
-    text-align: center;
-    justify-content: space-between;
-    margin-left: 50px;
-    width: 45%;
-  }
-
-  .main__secundario--titulo {
-    grid-area: titulo;
-  }
-
-  .main__secundario--button a button {
-    font-size: 40px;
-  }
-
-  @keyframes movimiento {
-    0%,
-    100% {
-      transform: translate(25px, 25px);
+  .main__secundario {
+    margin: 10px 100px;
+    &--titulo {
+      grid-area: titulo;
     }
-    25% {
-      transform: translate(25px, -25px);
+    &--button a button {
+      font-size: 40px;
     }
-    50% {
-      transform: translate(-25px, -25px);
+    /*efecto con @keyframe sobre las cartas*/
+    &--cards:hover {
+      animation-name: cartas;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      transition: all 2s;
+      border: 4px dashed #c1c5ca;
+      border-radius: 10%;
+      &.card1 {
+        transform: translate(160px, 75px) scale(1.15);
+        background-color: #e4eaf0;
+      }
+      &.card2 {
+        transform: translate(-160px, 75px) scale(1.15);
+        background-color: #e4eaf0;
+      }
+      &.card3 {
+        transform: translate(160px, -75px) scale(1.15);
+        background-color: #e4eaf0;
+      }
+      &.card4 {
+        transform: translate(-160px, -75px) scale(1.15);
+        background-color: #e4eaf0;
+      }
     }
-    75% {
-      transform: translate(-25px, 25px);
-    }
   }
-
-  /*efecto con @keyframe sobre las cartas*/
-  .main__secundario--cards:hover {
-    animation-name: cartas;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    transition: all 2s;
-    border: 4px dashed #c1c5ca;
-    border-radius: 10%;
-  }
-  .main__secundario--cards:hover.card1 {
-    transform: translate(160px, 75px) scale(1.15);
-    background-color: #e4eaf0;
-  }
-  .main__secundario--cards:hover.card2 {
-    transform: translate(-160px, 75px) scale(1.15);
-    background-color: #e4eaf0;
-  }
-  .main__secundario--cards:hover.card3 {
-    transform: translate(160px, -75px) scale(1.15);
-    background-color: #e4eaf0;
-  }
-  .main__secundario--cards:hover.card4 {
-    transform: translate(-160px, -75px) scale(1.15);
-    background-color: #e4eaf0;
-  }
-
   .main__quinto {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0 100px;
-  }
-  .main__quinto__col {
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-    & h4 {
-      padding: 15px 0;
+    &__col {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      margin: 50px;
+      & h4 {
+        padding: 15px 0;
+      }
     }
   }
 }
