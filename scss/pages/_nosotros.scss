@@ -1,4 +1,4 @@
-/* MAIN NOSOTROS */
+// MOBILE
 .main__nosotros {
   color: black;
   display: flex;
@@ -87,7 +87,7 @@
     }
   }
 }
-/*FLIP CARDS */
+// flip cards
 .tarjeta {
   display: flex;
   flex-direction: column;
@@ -99,24 +99,24 @@
     align-items: center;
   }
 }
-/* CARRUSEL*/
+// carrusel
 .carrousel {
   overflow: hidden;
 }
-/*modificar tamaño de imagenes dentro del carousel*/
+// para modificar tamaño de imagenes dentro del carousel
 .carousel-inner > .item > img {
   object-fit: scale-down;
   height: 50vh;
   width: 100%;
 }
+// TABLET
 @media screen and (min-width: 768px) {
-  /* MAIN NOSOTROS */
   .main__nosotros__quinto {
     margin: 0 40px;
   }
 }
+// DESKTOP
 @media screen and (min-width: 1024px) {
-  /* MAIN NOSOTROS */
   .main__nosotros {
     &__primario--parrafo--bg {
       height: 100vh;
@@ -196,8 +196,7 @@
       }
     }
   }
-
-  /*FLIP CARDS */
+  // flip cards
   .tarjeta {
     position: relative;
     width: 300px;
@@ -230,11 +229,9 @@
       border-radius: 15px;
     }
   }
-
   .tarjeta:hover .front {
     transform: perspective(500px) rotateY(180deg);
   }
-
   .tarjeta:hover .back {
     transform: perspective(500px) rotateY(360deg);
   }

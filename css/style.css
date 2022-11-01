@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -38,7 +37,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-nav-color: #1d67b2;
-  --bs-footer-color: #34373A;
+  --bs-footer-color: #34373a;
   --bs-enviar: #248931;
   --bs-azul: #1d67b2;
   --bs-primary-rgb: 13, 110, 253;
@@ -2389,8 +2388,8 @@ textarea.form-control-lg {
 
 .btn-footer-color {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #34373A;
-  --bs-btn-border-color: #34373A;
+  --bs-btn-bg: #34373a;
+  --bs-btn-border-color: #34373a;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #2c2f31;
   --bs-btn-hover-border-color: #2a2c2e;
@@ -2400,8 +2399,8 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: #27292c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #34373A;
-  --bs-btn-disabled-border-color: #34373A; }
+  --bs-btn-disabled-bg: #34373a;
+  --bs-btn-disabled-border-color: #34373a; }
 
 .btn-enviar {
   --bs-btn-color: #000;
@@ -2580,19 +2579,19 @@ textarea.form-control-lg {
   --bs-gradient: none; }
 
 .btn-outline-footer-color {
-  --bs-btn-color: #34373A;
-  --bs-btn-border-color: #34373A;
+  --bs-btn-color: #34373a;
+  --bs-btn-border-color: #34373a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #34373A;
-  --bs-btn-hover-border-color: #34373A;
+  --bs-btn-hover-bg: #34373a;
+  --bs-btn-hover-border-color: #34373a;
   --bs-btn-focus-shadow-rgb: 52, 55, 58;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #34373A;
-  --bs-btn-active-border-color: #34373A;
+  --bs-btn-active-bg: #34373a;
+  --bs-btn-active-border-color: #34373a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #34373A;
+  --bs-btn-disabled-color: #34373a;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #34373A;
+  --bs-btn-disabled-border-color: #34373a;
   --bs-gradient: none; }
 
 .btn-outline-enviar {
@@ -5695,7 +5694,7 @@ textarea.form-control-lg {
     color: #17528e !important; }
 
 .link-footer-color {
-  color: #34373A !important; }
+  color: #34373a !important; }
   .link-footer-color:hover, .link-footer-color:focus {
     color: #2a2c2e !important; }
 
@@ -9001,7 +9000,6 @@ textarea.form-control-lg {
     .main__secundario__contacto--form {
       width: 50%; } }
 
-/* MAIN NOSOTROS */
 .main__nosotros {
   color: black;
   display: flex;
@@ -9071,7 +9069,6 @@ textarea.form-control-lg {
       .main__nosotros__quinto--estadisticas h3, .main__nosotros__quinto--estadisticas .h3 {
         padding-bottom: 15px; }
 
-/*FLIP CARDS */
 .tarjeta {
   display: flex;
   flex-direction: column;
@@ -9082,23 +9079,19 @@ textarea.form-control-lg {
     flex-direction: column;
     align-items: center; }
 
-/* CARRUSEL*/
 .carrousel {
   overflow: hidden; }
 
-/*modificar tamaño de imagenes dentro del carousel*/
 .carousel-inner > .item > img {
   object-fit: scale-down;
   height: 50vh;
   width: 100%; }
 
 @media screen and (min-width: 768px) {
-  /* MAIN NOSOTROS */
   .main__nosotros__quinto {
     margin: 0 40px; } }
 
 @media screen and (min-width: 1024px) {
-  /* MAIN NOSOTROS */
   .main__nosotros__primario--parrafo--bg {
     height: 100vh;
     margin-bottom: 40px;
@@ -9160,7 +9153,6 @@ textarea.form-control-lg {
       .main__nosotros__quinto--estadisticas h3, .main__nosotros__quinto--estadisticas .h3 {
         text-align: center;
         padding-bottom: 15px; }
-  /*FLIP CARDS */
   .tarjeta {
     position: relative;
     width: 300px;
@@ -9437,4 +9429,4 @@ p {
   margin: auto auto 40px auto; }
 
 .azul {
-  color: #1D67B2; }
+  color: #1d67b2; }

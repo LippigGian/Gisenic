@@ -1,4 +1,4 @@
-// COMIENZA MAIN PRINCIPAL
+// MOBILE
 .main__principal__faq {
   background-image: url("../img/faqbg.jpg");
   background-repeat: no-repeat;
@@ -50,8 +50,6 @@
     }
   }
 }
-
-// COMIENZA MAIN SECUNDARIO
 .main__secundario__faq {
   display: flex;
   flex-direction: column;
@@ -65,9 +63,8 @@
     text-align: center;
   }
 }
-
+// DESKTOP
 @media screen and (min-width: 1024px) {
-  // COMIENZA MAIN PRINCIPAL
   .main__principal__faq {
     height: 100vh;
     background-attachment: fixed;
@@ -119,8 +116,6 @@
       }
     }
   }
-
-  // COMIENZA MAIN SECUNDARIO
   .main__secundario__faq {
     display: grid;
     grid-template-areas:
